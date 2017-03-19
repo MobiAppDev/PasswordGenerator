@@ -7,16 +7,45 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		B00939B01E3063DC002F71D0 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B00939AF1E3063DC002F71D0 /* main.m */; };
-		B00939B31E3063DC002F71D0 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B00939B21E3063DC002F71D0 /* AppDelegate.m */; };
-		B00939B61E3063DC002F71D0 /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B00939B51E3063DC002F71D0 /* RootViewController.m */; };
-		B00939B91E3063DC002F71D0 /* DataViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B00939B81E3063DC002F71D0 /* DataViewController.m */; };
-		B00939BC1E3063DC002F71D0 /* ModelController.m in Sources */ = {isa = PBXBuildFile; fileRef = B00939BB1E3063DC002F71D0 /* ModelController.m */; };
 		B00939BF1E3063DC002F71D0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B00939BD1E3063DC002F71D0 /* Main.storyboard */; };
-		B00939C11E3063DC002F71D0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B00939C01E3063DC002F71D0 /* Assets.xcassets */; };
 		B00939C41E3063DC002F71D0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B00939C21E3063DC002F71D0 /* LaunchScreen.storyboard */; };
 		B00939CF1E3063DC002F71D0 /* Password_GeneratorTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B00939CE1E3063DC002F71D0 /* Password_GeneratorTests.m */; };
 		B00939DA1E3063DC002F71D0 /* Password_GeneratorUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = B00939D91E3063DC002F71D0 /* Password_GeneratorUITests.m */; };
+		B088D26A1E7E13F5004286C3 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B088D2691E7E13F5004286C3 /* AppDelegate.m */; };
+		B088D26D1E7E1411004286C3 /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B088D26C1E7E1411004286C3 /* RootViewController.m */; };
+		B088D2701E7E142A004286C3 /* DataViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B088D26F1E7E142A004286C3 /* DataViewController.m */; };
+		B088D2731E7E1442004286C3 /* ModelController.m in Sources */ = {isa = PBXBuildFile; fileRef = B088D2721E7E1442004286C3 /* ModelController.m */; };
+		B088D2751E7E14FA004286C3 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B088D2741E7E14FA004286C3 /* Info.plist */; };
+		B088D2771E7E150B004286C3 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B088D2761E7E150B004286C3 /* main.m */; };
+		B088D2791E7E1542004286C3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B088D2781E7E1542004286C3 /* Assets.xcassets */; };
+		B088D28E1E7E1626004286C3 /* AppIcon29x29.png in Resources */ = {isa = PBXBuildFile; fileRef = B088D27A1E7E1626004286C3 /* AppIcon29x29.png */; };
+		B088D28F1E7E1626004286C3 /* AppIcon29x29@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B088D27B1E7E1626004286C3 /* AppIcon29x29@2x.png */; };
+		B088D2901E7E1626004286C3 /* AppIcon40x40.png in Resources */ = {isa = PBXBuildFile; fileRef = B088D27C1E7E1626004286C3 /* AppIcon40x40.png */; };
+		B088D2911E7E1626004286C3 /* AppIcon40x40@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B088D27D1E7E1626004286C3 /* AppIcon40x40@2x.png */; };
+		B088D2921E7E1626004286C3 /* AppIcon50x50.png in Resources */ = {isa = PBXBuildFile; fileRef = B088D27E1E7E1626004286C3 /* AppIcon50x50.png */; };
+		B088D2931E7E1626004286C3 /* AppIcon50x50@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B088D27F1E7E1626004286C3 /* AppIcon50x50@2x.png */; };
+		B088D2941E7E1626004286C3 /* AppIcon57x57.png in Resources */ = {isa = PBXBuildFile; fileRef = B088D2801E7E1626004286C3 /* AppIcon57x57.png */; };
+		B088D2951E7E1626004286C3 /* AppIcon57x57@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B088D2811E7E1626004286C3 /* AppIcon57x57@2x.png */; };
+		B088D2961E7E1626004286C3 /* AppIcon60x60.png in Resources */ = {isa = PBXBuildFile; fileRef = B088D2821E7E1626004286C3 /* AppIcon60x60.png */; };
+		B088D2971E7E1626004286C3 /* AppIcon60x60@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B088D2831E7E1626004286C3 /* AppIcon60x60@2x.png */; };
+		B088D2981E7E1626004286C3 /* AppIcon72x72.png in Resources */ = {isa = PBXBuildFile; fileRef = B088D2841E7E1626004286C3 /* AppIcon72x72.png */; };
+		B088D2991E7E1626004286C3 /* AppIcon72x72@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B088D2851E7E1626004286C3 /* AppIcon72x72@2x.png */; };
+		B088D29A1E7E1626004286C3 /* AppIcon76x76.png in Resources */ = {isa = PBXBuildFile; fileRef = B088D2861E7E1626004286C3 /* AppIcon76x76.png */; };
+		B088D29B1E7E1626004286C3 /* AppIcon76x76@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B088D2871E7E1626004286C3 /* AppIcon76x76@2x.png */; };
+		B088D29C1E7E1626004286C3 /* Applcon87x87.png in Resources */ = {isa = PBXBuildFile; fileRef = B088D2881E7E1626004286C3 /* Applcon87x87.png */; };
+		B088D29D1E7E1626004286C3 /* Applcon87x87@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B088D2891E7E1626004286C3 /* Applcon87x87@2x.png */; };
+		B088D29E1E7E1626004286C3 /* Applcon90x90.png in Resources */ = {isa = PBXBuildFile; fileRef = B088D28A1E7E1626004286C3 /* Applcon90x90.png */; };
+		B088D29F1E7E1626004286C3 /* Applcon90x90@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B088D28B1E7E1626004286C3 /* Applcon90x90@2x.png */; };
+		B088D2A01E7E1626004286C3 /* iTunesArtwork.png in Resources */ = {isa = PBXBuildFile; fileRef = B088D28C1E7E1626004286C3 /* iTunesArtwork.png */; };
+		B088D2A11E7E1626004286C3 /* iTunesArtwork@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B088D28D1E7E1626004286C3 /* iTunesArtwork@2x.png */; };
+		B088D2A41E7E1B3D004286C3 /* AppIcon20x20.png in Resources */ = {isa = PBXBuildFile; fileRef = B088D2A21E7E1B3D004286C3 /* AppIcon20x20.png */; };
+		B088D2A81E7E1BB3004286C3 /* AppIcon20x20@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B088D2A61E7E1BB3004286C3 /* AppIcon20x20@2x.png */; };
+		B088D2A91E7E1BB3004286C3 /* AppIcon20x20@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = B088D2A71E7E1BB3004286C3 /* AppIcon20x20@3x.png */; };
+		B088D2AB1E7E1C41004286C3 /* AppIcon29x29@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = B088D2AA1E7E1C41004286C3 /* AppIcon29x29@3x.png */; };
+		B088D2AD1E7E1CB2004286C3 /* AppIcon40x40@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = B088D2AC1E7E1CB2004286C3 /* AppIcon40x40@3x.png */; };
+		B088D2AF1E7E1D16004286C3 /* Applcon60x60@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = B088D2AE1E7E1D16004286C3 /* Applcon60x60@3x.png */; };
+		B088D2B11E7E1DE0004286C3 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B088D2B01E7E1DE0004286C3 /* Default-568h@2x.png */; };
+		B0E63E051E7E220D00E10DC9 /* LaunchImage.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B0E63E041E7E220D00E10DC9 /* LaunchImage.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,25 +67,53 @@
 
 /* Begin PBXFileReference section */
 		B00939AB1E3063DC002F71D0 /* Password Generator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Password Generator.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		B00939AF1E3063DC002F71D0 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		B00939B11E3063DC002F71D0 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		B00939B21E3063DC002F71D0 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		B00939B41E3063DC002F71D0 /* RootViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RootViewController.h; sourceTree = "<group>"; };
-		B00939B51E3063DC002F71D0 /* RootViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RootViewController.m; sourceTree = "<group>"; };
-		B00939B71E3063DC002F71D0 /* DataViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DataViewController.h; sourceTree = "<group>"; };
-		B00939B81E3063DC002F71D0 /* DataViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DataViewController.m; sourceTree = "<group>"; };
-		B00939BA1E3063DC002F71D0 /* ModelController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ModelController.h; sourceTree = "<group>"; };
-		B00939BB1E3063DC002F71D0 /* ModelController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ModelController.m; sourceTree = "<group>"; };
 		B00939BE1E3063DC002F71D0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		B00939C01E3063DC002F71D0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B00939C31E3063DC002F71D0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		B00939C51E3063DC002F71D0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B00939CA1E3063DC002F71D0 /* Password GeneratorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Password GeneratorTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B00939CE1E3063DC002F71D0 /* Password_GeneratorTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Password_GeneratorTests.m; sourceTree = "<group>"; };
 		B00939D01E3063DC002F71D0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B00939D51E3063DC002F71D0 /* Password GeneratorUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Password GeneratorUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B00939D91E3063DC002F71D0 /* Password_GeneratorUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Password_GeneratorUITests.m; sourceTree = "<group>"; };
 		B00939DB1E3063DC002F71D0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B088D2681E7E13F5004286C3 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = AppDelegate/AppDelegate.h; sourceTree = "<group>"; };
+		B088D2691E7E13F5004286C3 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = AppDelegate/AppDelegate.m; sourceTree = "<group>"; };
+		B088D26B1E7E1411004286C3 /* RootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RootViewController.h; path = RootViewController/RootViewController.h; sourceTree = "<group>"; };
+		B088D26C1E7E1411004286C3 /* RootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RootViewController.m; path = RootViewController/RootViewController.m; sourceTree = "<group>"; };
+		B088D26E1E7E142A004286C3 /* DataViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DataViewController.h; path = DataViewController/DataViewController.h; sourceTree = "<group>"; };
+		B088D26F1E7E142A004286C3 /* DataViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DataViewController.m; path = DataViewController/DataViewController.m; sourceTree = "<group>"; };
+		B088D2711E7E1442004286C3 /* ModelController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ModelController.h; path = ModelController/ModelController.h; sourceTree = "<group>"; };
+		B088D2721E7E1442004286C3 /* ModelController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ModelController.m; path = ModelController/ModelController.m; sourceTree = "<group>"; };
+		B088D2741E7E14FA004286C3 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = "Supporting Files/Info.plist"; sourceTree = "<group>"; };
+		B088D2761E7E150B004286C3 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = "Supporting Files/main.m"; sourceTree = "<group>"; };
+		B088D2781E7E1542004286C3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = "Supporting Files/Assets.xcassets"; sourceTree = "<group>"; };
+		B088D27A1E7E1626004286C3 /* AppIcon29x29.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = AppIcon29x29.png; path = "Supporting Files/icons/AppIcon29x29.png"; sourceTree = "<group>"; };
+		B088D27B1E7E1626004286C3 /* AppIcon29x29@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "AppIcon29x29@2x.png"; path = "Supporting Files/icons/AppIcon29x29@2x.png"; sourceTree = "<group>"; };
+		B088D27C1E7E1626004286C3 /* AppIcon40x40.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = AppIcon40x40.png; path = "Supporting Files/icons/AppIcon40x40.png"; sourceTree = "<group>"; };
+		B088D27D1E7E1626004286C3 /* AppIcon40x40@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "AppIcon40x40@2x.png"; path = "Supporting Files/icons/AppIcon40x40@2x.png"; sourceTree = "<group>"; };
+		B088D27E1E7E1626004286C3 /* AppIcon50x50.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = AppIcon50x50.png; path = "Supporting Files/icons/AppIcon50x50.png"; sourceTree = "<group>"; };
+		B088D27F1E7E1626004286C3 /* AppIcon50x50@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "AppIcon50x50@2x.png"; path = "Supporting Files/icons/AppIcon50x50@2x.png"; sourceTree = "<group>"; };
+		B088D2801E7E1626004286C3 /* AppIcon57x57.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = AppIcon57x57.png; path = "Supporting Files/icons/AppIcon57x57.png"; sourceTree = "<group>"; };
+		B088D2811E7E1626004286C3 /* AppIcon57x57@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "AppIcon57x57@2x.png"; path = "Supporting Files/icons/AppIcon57x57@2x.png"; sourceTree = "<group>"; };
+		B088D2821E7E1626004286C3 /* AppIcon60x60.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = AppIcon60x60.png; path = "Supporting Files/icons/AppIcon60x60.png"; sourceTree = "<group>"; };
+		B088D2831E7E1626004286C3 /* AppIcon60x60@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "AppIcon60x60@2x.png"; path = "Supporting Files/icons/AppIcon60x60@2x.png"; sourceTree = "<group>"; };
+		B088D2841E7E1626004286C3 /* AppIcon72x72.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = AppIcon72x72.png; path = "Supporting Files/icons/AppIcon72x72.png"; sourceTree = "<group>"; };
+		B088D2851E7E1626004286C3 /* AppIcon72x72@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "AppIcon72x72@2x.png"; path = "Supporting Files/icons/AppIcon72x72@2x.png"; sourceTree = "<group>"; };
+		B088D2861E7E1626004286C3 /* AppIcon76x76.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = AppIcon76x76.png; path = "Supporting Files/icons/AppIcon76x76.png"; sourceTree = "<group>"; };
+		B088D2871E7E1626004286C3 /* AppIcon76x76@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "AppIcon76x76@2x.png"; path = "Supporting Files/icons/AppIcon76x76@2x.png"; sourceTree = "<group>"; };
+		B088D2881E7E1626004286C3 /* Applcon87x87.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Applcon87x87.png; path = "Supporting Files/icons/Applcon87x87.png"; sourceTree = "<group>"; };
+		B088D2891E7E1626004286C3 /* Applcon87x87@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Applcon87x87@2x.png"; path = "Supporting Files/icons/Applcon87x87@2x.png"; sourceTree = "<group>"; };
+		B088D28A1E7E1626004286C3 /* Applcon90x90.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Applcon90x90.png; path = "Supporting Files/icons/Applcon90x90.png"; sourceTree = "<group>"; };
+		B088D28B1E7E1626004286C3 /* Applcon90x90@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Applcon90x90@2x.png"; path = "Supporting Files/icons/Applcon90x90@2x.png"; sourceTree = "<group>"; };
+		B088D28C1E7E1626004286C3 /* iTunesArtwork.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = iTunesArtwork.png; path = "Supporting Files/icons/iTunesArtwork.png"; sourceTree = "<group>"; };
+		B088D28D1E7E1626004286C3 /* iTunesArtwork@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "iTunesArtwork@2x.png"; path = "Supporting Files/icons/iTunesArtwork@2x.png"; sourceTree = "<group>"; };
+		B088D2A21E7E1B3D004286C3 /* AppIcon20x20.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = AppIcon20x20.png; path = "Supporting Files/icons/AppIcon20x20.png"; sourceTree = "<group>"; };
+		B088D2A61E7E1BB3004286C3 /* AppIcon20x20@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "AppIcon20x20@2x.png"; path = "Supporting Files/icons/AppIcon20x20@2x.png"; sourceTree = "<group>"; };
+		B088D2A71E7E1BB3004286C3 /* AppIcon20x20@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "AppIcon20x20@3x.png"; path = "Supporting Files/icons/AppIcon20x20@3x.png"; sourceTree = "<group>"; };
+		B088D2AA1E7E1C41004286C3 /* AppIcon29x29@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "AppIcon29x29@3x.png"; path = "Supporting Files/icons/AppIcon29x29@3x.png"; sourceTree = "<group>"; };
+		B088D2AC1E7E1CB2004286C3 /* AppIcon40x40@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "AppIcon40x40@3x.png"; path = "Supporting Files/icons/AppIcon40x40@3x.png"; sourceTree = "<group>"; };
+		B088D2AE1E7E1D16004286C3 /* Applcon60x60@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Applcon60x60@3x.png"; path = "Supporting Files/icons/Applcon60x60@3x.png"; sourceTree = "<group>"; };
+		B088D2B01E7E1DE0004286C3 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default-568h@2x.png"; path = "../Default-568h@2x.png"; sourceTree = "<group>"; };
+		B0E63E041E7E220D00E10DC9 /* LaunchImage.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = LaunchImage.xcassets; path = "Supporting Files/LaunchImage.xcassets"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,18 +164,11 @@
 		B00939AD1E3063DC002F71D0 /* Password Generator */ = {
 			isa = PBXGroup;
 			children = (
-				B00939B11E3063DC002F71D0 /* AppDelegate.h */,
-				B00939B21E3063DC002F71D0 /* AppDelegate.m */,
-				B00939B41E3063DC002F71D0 /* RootViewController.h */,
-				B00939B51E3063DC002F71D0 /* RootViewController.m */,
-				B00939B71E3063DC002F71D0 /* DataViewController.h */,
-				B00939B81E3063DC002F71D0 /* DataViewController.m */,
-				B00939BA1E3063DC002F71D0 /* ModelController.h */,
-				B00939BB1E3063DC002F71D0 /* ModelController.m */,
-				B00939BD1E3063DC002F71D0 /* Main.storyboard */,
-				B00939C01E3063DC002F71D0 /* Assets.xcassets */,
-				B00939C21E3063DC002F71D0 /* LaunchScreen.storyboard */,
-				B00939C51E3063DC002F71D0 /* Info.plist */,
+				B088D23D1E7E1114004286C3 /* AppDelegate */,
+				B088D23B1E7E10BA004286C3 /* RootViewController */,
+				B088D23C1E7E10FD004286C3 /* DataViewcController */,
+				B088D23A1E7E10A9004286C3 /* ModelControler */,
+				B088D2391E7E1090004286C3 /* Storyboards */,
 				B00939AE1E3063DC002F71D0 /* Supporting Files */,
 			);
 			path = "Password Generator";
@@ -127,7 +177,11 @@
 		B00939AE1E3063DC002F71D0 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				B00939AF1E3063DC002F71D0 /* main.m */,
+				B0E63E041E7E220D00E10DC9 /* LaunchImage.xcassets */,
+				B088D2781E7E1542004286C3 /* Assets.xcassets */,
+				B088D2761E7E150B004286C3 /* main.m */,
+				B088D2741E7E14FA004286C3 /* Info.plist */,
+				B088D23E1E7E1194004286C3 /* Icons */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -148,6 +202,85 @@
 				B00939DB1E3063DC002F71D0 /* Info.plist */,
 			);
 			path = "Password GeneratorUITests";
+			sourceTree = "<group>";
+		};
+		B088D2391E7E1090004286C3 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				B00939BD1E3063DC002F71D0 /* Main.storyboard */,
+				B00939C21E3063DC002F71D0 /* LaunchScreen.storyboard */,
+			);
+			name = Storyboards;
+			sourceTree = "<group>";
+		};
+		B088D23A1E7E10A9004286C3 /* ModelControler */ = {
+			isa = PBXGroup;
+			children = (
+				B088D2711E7E1442004286C3 /* ModelController.h */,
+				B088D2721E7E1442004286C3 /* ModelController.m */,
+			);
+			name = ModelControler;
+			sourceTree = "<group>";
+		};
+		B088D23B1E7E10BA004286C3 /* RootViewController */ = {
+			isa = PBXGroup;
+			children = (
+				B088D26B1E7E1411004286C3 /* RootViewController.h */,
+				B088D26C1E7E1411004286C3 /* RootViewController.m */,
+			);
+			name = RootViewController;
+			sourceTree = "<group>";
+		};
+		B088D23C1E7E10FD004286C3 /* DataViewcController */ = {
+			isa = PBXGroup;
+			children = (
+				B088D26E1E7E142A004286C3 /* DataViewController.h */,
+				B088D26F1E7E142A004286C3 /* DataViewController.m */,
+			);
+			name = DataViewcController;
+			sourceTree = "<group>";
+		};
+		B088D23D1E7E1114004286C3 /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				B088D2681E7E13F5004286C3 /* AppDelegate.h */,
+				B088D2691E7E13F5004286C3 /* AppDelegate.m */,
+			);
+			name = AppDelegate;
+			sourceTree = "<group>";
+		};
+		B088D23E1E7E1194004286C3 /* Icons */ = {
+			isa = PBXGroup;
+			children = (
+				B088D2B01E7E1DE0004286C3 /* Default-568h@2x.png */,
+				B088D2A21E7E1B3D004286C3 /* AppIcon20x20.png */,
+				B088D2A61E7E1BB3004286C3 /* AppIcon20x20@2x.png */,
+				B088D2A71E7E1BB3004286C3 /* AppIcon20x20@3x.png */,
+				B088D27A1E7E1626004286C3 /* AppIcon29x29.png */,
+				B088D27B1E7E1626004286C3 /* AppIcon29x29@2x.png */,
+				B088D2AA1E7E1C41004286C3 /* AppIcon29x29@3x.png */,
+				B088D27C1E7E1626004286C3 /* AppIcon40x40.png */,
+				B088D27D1E7E1626004286C3 /* AppIcon40x40@2x.png */,
+				B088D2AC1E7E1CB2004286C3 /* AppIcon40x40@3x.png */,
+				B088D27E1E7E1626004286C3 /* AppIcon50x50.png */,
+				B088D27F1E7E1626004286C3 /* AppIcon50x50@2x.png */,
+				B088D2801E7E1626004286C3 /* AppIcon57x57.png */,
+				B088D2811E7E1626004286C3 /* AppIcon57x57@2x.png */,
+				B088D2821E7E1626004286C3 /* AppIcon60x60.png */,
+				B088D2831E7E1626004286C3 /* AppIcon60x60@2x.png */,
+				B088D2AE1E7E1D16004286C3 /* Applcon60x60@3x.png */,
+				B088D2841E7E1626004286C3 /* AppIcon72x72.png */,
+				B088D2851E7E1626004286C3 /* AppIcon72x72@2x.png */,
+				B088D2861E7E1626004286C3 /* AppIcon76x76.png */,
+				B088D2871E7E1626004286C3 /* AppIcon76x76@2x.png */,
+				B088D2881E7E1626004286C3 /* Applcon87x87.png */,
+				B088D2891E7E1626004286C3 /* Applcon87x87@2x.png */,
+				B088D28A1E7E1626004286C3 /* Applcon90x90.png */,
+				B088D28B1E7E1626004286C3 /* Applcon90x90@2x.png */,
+				B088D28C1E7E1626004286C3 /* iTunesArtwork.png */,
+				B088D28D1E7E1626004286C3 /* iTunesArtwork@2x.png */,
+			);
+			name = Icons;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -259,9 +392,38 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B088D2751E7E14FA004286C3 /* Info.plist in Resources */,
+				B088D2AD1E7E1CB2004286C3 /* AppIcon40x40@3x.png in Resources */,
 				B00939C41E3063DC002F71D0 /* LaunchScreen.storyboard in Resources */,
-				B00939C11E3063DC002F71D0 /* Assets.xcassets in Resources */,
+				B088D2911E7E1626004286C3 /* AppIcon40x40@2x.png in Resources */,
+				B088D28E1E7E1626004286C3 /* AppIcon29x29.png in Resources */,
+				B088D29A1E7E1626004286C3 /* AppIcon76x76.png in Resources */,
+				B088D2AB1E7E1C41004286C3 /* AppIcon29x29@3x.png in Resources */,
+				B088D2991E7E1626004286C3 /* AppIcon72x72@2x.png in Resources */,
 				B00939BF1E3063DC002F71D0 /* Main.storyboard in Resources */,
+				B088D2A91E7E1BB3004286C3 /* AppIcon20x20@3x.png in Resources */,
+				B088D28F1E7E1626004286C3 /* AppIcon29x29@2x.png in Resources */,
+				B088D2951E7E1626004286C3 /* AppIcon57x57@2x.png in Resources */,
+				B088D2A41E7E1B3D004286C3 /* AppIcon20x20.png in Resources */,
+				B088D2A01E7E1626004286C3 /* iTunesArtwork.png in Resources */,
+				B0E63E051E7E220D00E10DC9 /* LaunchImage.xcassets in Resources */,
+				B088D2AF1E7E1D16004286C3 /* Applcon60x60@3x.png in Resources */,
+				B088D2941E7E1626004286C3 /* AppIcon57x57.png in Resources */,
+				B088D2A81E7E1BB3004286C3 /* AppIcon20x20@2x.png in Resources */,
+				B088D2B11E7E1DE0004286C3 /* Default-568h@2x.png in Resources */,
+				B088D2791E7E1542004286C3 /* Assets.xcassets in Resources */,
+				B088D2901E7E1626004286C3 /* AppIcon40x40.png in Resources */,
+				B088D29C1E7E1626004286C3 /* Applcon87x87.png in Resources */,
+				B088D2981E7E1626004286C3 /* AppIcon72x72.png in Resources */,
+				B088D2971E7E1626004286C3 /* AppIcon60x60@2x.png in Resources */,
+				B088D29B1E7E1626004286C3 /* AppIcon76x76@2x.png in Resources */,
+				B088D29E1E7E1626004286C3 /* Applcon90x90.png in Resources */,
+				B088D2931E7E1626004286C3 /* AppIcon50x50@2x.png in Resources */,
+				B088D2A11E7E1626004286C3 /* iTunesArtwork@2x.png in Resources */,
+				B088D2961E7E1626004286C3 /* AppIcon60x60.png in Resources */,
+				B088D29F1E7E1626004286C3 /* Applcon90x90@2x.png in Resources */,
+				B088D2921E7E1626004286C3 /* AppIcon50x50.png in Resources */,
+				B088D29D1E7E1626004286C3 /* Applcon87x87@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -286,11 +448,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B00939B91E3063DC002F71D0 /* DataViewController.m in Sources */,
-				B00939B31E3063DC002F71D0 /* AppDelegate.m in Sources */,
-				B00939BC1E3063DC002F71D0 /* ModelController.m in Sources */,
-				B00939B01E3063DC002F71D0 /* main.m in Sources */,
-				B00939B61E3063DC002F71D0 /* RootViewController.m in Sources */,
+				B088D26A1E7E13F5004286C3 /* AppDelegate.m in Sources */,
+				B088D26D1E7E1411004286C3 /* RootViewController.m in Sources */,
+				B088D2731E7E1442004286C3 /* ModelController.m in Sources */,
+				B088D2701E7E142A004286C3 /* DataViewController.m in Sources */,
+				B088D2771E7E150B004286C3 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -332,7 +494,8 @@
 				B00939BE1E3063DC002F71D0 /* Base */,
 			);
 			name = Main.storyboard;
-			sourceTree = "<group>";
+			path = "/Users/Wayne/Downloads/All_IOS_Projects/Password Generator/Password Generator/Supporting Files";
+			sourceTree = "<absolute>";
 		};
 		B00939C21E3063DC002F71D0 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
@@ -340,7 +503,8 @@
 				B00939C31E3063DC002F71D0 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
+			path = "/Users/Wayne/Downloads/All_IOS_Projects/Password Generator/Password Generator/Supporting Files";
+			sourceTree = "<absolute>";
 		};
 /* End PBXVariantGroup section */
 
@@ -437,8 +601,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				DEVELOPMENT_TEAM = CG3WB2TNJ2;
-				INFOPLIST_FILE = "Password Generator/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/Password Generator/Supporting Files/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.surfsidesoftwaresolutions.waynedhill.Password-Generator";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -449,8 +615,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				DEVELOPMENT_TEAM = CG3WB2TNJ2;
-				INFOPLIST_FILE = "Password Generator/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/Password Generator/Supporting Files/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.surfsidesoftwaresolutions.waynedhill.Password-Generator";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -526,6 +694,7 @@
 				B00939E01E3063DC002F71D0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		B00939E11E3063DC002F71D0 /* Build configuration list for PBXNativeTarget "Password GeneratorTests" */ = {
 			isa = XCConfigurationList;
@@ -534,6 +703,7 @@
 				B00939E31E3063DC002F71D0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		B00939E41E3063DC002F71D0 /* Build configuration list for PBXNativeTarget "Password GeneratorUITests" */ = {
 			isa = XCConfigurationList;
@@ -542,6 +712,7 @@
 				B00939E61E3063DC002F71D0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
