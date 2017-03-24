@@ -1,0 +1,278 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="703-4V-yAM">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Launch Screen-->
+        <scene sceneID="clB-vc-fyl">
+            <objects>
+                <viewController storyboardIdentifier="LaunchScreen.storyboard" title="Launch Screen" modalTransitionStyle="flipHorizontal" useStoryboardIdentifierAsRestorationIdentifier="YES" id="703-4V-yAM" customClass="RootViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="I7W-xW-C47"/>
+                        <viewControllerLayoutGuide type="bottom" id="IfR-02-kHw"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="502-Ir-ELC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Q3h-pU-vEd" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-278" y="-243"/>
+        </scene>
+        <!--Password Generator-->
+        <scene sceneID="snT-py-3hH">
+            <objects>
+                <viewController storyboardIdentifier="DataViewController" title="Password Generator" id="S4R-Ja-viH" customClass="DataViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="fXf-Jd-eTc"/>
+                        <viewControllerLayoutGuide type="bottom" id="EPS-s9-h4K"/>
+                    </layoutGuides>
+                    <view key="view" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="ZwX-cT-FIQ">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <subviews>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" usesAttributedText="YES" lineBreakMode="tailTruncation" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="cF2-Le-7mQ">
+                                <rect key="frame" x="20" y="56" width="335" height="41"/>
+                                <accessibility key="accessibilityConfiguration" hint="This application creates NEW Passwords." identifier="lbl_ApplicationTitle" label="lbl_ApplicationTitle"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="41" id="akn-jW-QNH"/>
+                                </constraints>
+                                <attributedString key="attributedText">
+                                    <fragment content="PASSWORD GENERATOR">
+                                        <attributes>
+                                            <color key="NSColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <font key="NSFont" size="27" name=".AppleSystemUIFont"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="truncatingTail" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="s1b-V9-EN7">
+                                <rect key="frame" x="20" y="108" width="335" height="517"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2ze-Mo-hPB">
+                                        <rect key="frame" x="0.0" y="15" width="335" height="45"/>
+                                        <accessibility key="accessibilityConfiguration" hint="Select This Password to Assign to Application" identifier="btn_GeneratedPassword" label="Password"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="45" id="Yx5-br-ShG"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                        <state key="normal" title="QwE4G&amp;hj8!is0Zv">
+                                            <color key="titleColor" red="0.0" green="0.0" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <connections>
+                                            <segue destination="RwS-Xb-BMN" kind="presentation" identifier="segway_NavagateToPasswordSettings" modalPresentationStyle="fullScreen" modalTransitionStyle="flipHorizontal" id="bgE-hr-uKv"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2MV-oM-BjS">
+                                        <rect key="frame" x="0.0" y="457" width="335" height="45"/>
+                                        <accessibility key="accessibilityConfiguration" hint="Select this button to SAVE this password." identifier="btn_SavePassword" label="btn_SavePassword"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="45" id="7ZX-By-ScN"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                        <state key="normal" title="SAVE PASSWORD">
+                                            <color key="titleColor" red="0.0" green="0.0" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <connections>
+                                            <segue destination="cku-oS-qoP" kind="presentation" identifier="segway_NavigatorToSavedPasswords" modalPresentationStyle="pageSheet" modalTransitionStyle="flipHorizontal" id="xzj-Og-gfA"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="d6m-PR-VK4">
+                                        <rect key="frame" x="0.0" y="398" width="335" height="45"/>
+                                        <accessibility key="accessibilityConfiguration" hint="Select this button to GENERATE a new password." identifier="btn_GeneratePassword" label="Generate Password"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="45" id="MWL-Fj-Qeq"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                        <state key="normal" title="GENERATE PASSWORD">
+                                            <color key="titleColor" red="0.0" green="0.0" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="GeneratePassword:" destination="S4R-Ja-viH" eventType="touchUpInside" id="NOL-b0-1FJ"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstItem="2MV-oM-BjS" firstAttribute="top" secondItem="d6m-PR-VK4" secondAttribute="bottom" constant="14" id="4Oq-HK-MEx"/>
+                                    <constraint firstItem="2ze-Mo-hPB" firstAttribute="leading" secondItem="s1b-V9-EN7" secondAttribute="leading" id="6ad-Cq-CO2"/>
+                                    <constraint firstAttribute="bottom" secondItem="2MV-oM-BjS" secondAttribute="bottom" constant="15" id="P2q-Xf-igb"/>
+                                    <constraint firstItem="2ze-Mo-hPB" firstAttribute="trailing" secondItem="d6m-PR-VK4" secondAttribute="trailing" id="QRz-ao-QlU"/>
+                                    <constraint firstItem="d6m-PR-VK4" firstAttribute="trailing" secondItem="2MV-oM-BjS" secondAttribute="trailing" id="TuY-Db-qu0"/>
+                                    <constraint firstItem="2ze-Mo-hPB" firstAttribute="top" secondItem="s1b-V9-EN7" secondAttribute="top" constant="15" id="aOK-FC-Net"/>
+                                    <constraint firstItem="d6m-PR-VK4" firstAttribute="leading" secondItem="2MV-oM-BjS" secondAttribute="leading" id="gRA-Nx-DXb"/>
+                                    <constraint firstItem="2ze-Mo-hPB" firstAttribute="leading" secondItem="d6m-PR-VK4" secondAttribute="leading" id="ohT-wz-YHK"/>
+                                    <constraint firstAttribute="trailing" secondItem="2ze-Mo-hPB" secondAttribute="trailing" id="sXh-iU-Jbc"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="COPYRIGHT 2017 Surfside Software Solution" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="TQX-PS-iox">
+                                <rect key="frame" x="20" y="633" width="335" height="25"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="25" id="Dkq-V1-Ry4"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.0" green="0.50196081400000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="cF2-Le-7mQ" firstAttribute="top" secondItem="fXf-Jd-eTc" secondAttribute="bottom" constant="36" id="1EY-3Y-4vO"/>
+                            <constraint firstItem="s1b-V9-EN7" firstAttribute="trailing" secondItem="TQX-PS-iox" secondAttribute="trailing" id="5vT-kc-6hq"/>
+                            <constraint firstItem="cF2-Le-7mQ" firstAttribute="trailing" secondItem="s1b-V9-EN7" secondAttribute="trailing" id="CAv-x9-WXO"/>
+                            <constraint firstItem="s1b-V9-EN7" firstAttribute="leading" secondItem="TQX-PS-iox" secondAttribute="leading" id="IES-Aj-HeP"/>
+                            <constraint firstItem="EPS-s9-h4K" firstAttribute="top" secondItem="TQX-PS-iox" secondAttribute="bottom" constant="9" id="Ltb-NV-elb"/>
+                            <constraint firstItem="cF2-Le-7mQ" firstAttribute="leading" secondItem="ZwX-cT-FIQ" secondAttribute="leadingMargin" constant="4" id="TtN-zC-qFA"/>
+                            <constraint firstItem="TQX-PS-iox" firstAttribute="top" secondItem="s1b-V9-EN7" secondAttribute="bottom" constant="8" symbolic="YES" id="acp-8a-aN9"/>
+                            <constraint firstItem="cF2-Le-7mQ" firstAttribute="centerX" secondItem="ZwX-cT-FIQ" secondAttribute="centerX" id="ktE-ct-Yc3"/>
+                            <constraint firstItem="cF2-Le-7mQ" firstAttribute="leading" secondItem="s1b-V9-EN7" secondAttribute="leading" id="lbQ-ef-RyD"/>
+                            <constraint firstItem="s1b-V9-EN7" firstAttribute="top" secondItem="cF2-Le-7mQ" secondAttribute="bottom" constant="11" id="zZI-W9-UlX"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="dataLabel" destination="cF2-Le-7mQ" id="3EH-BK-JV6"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="GmD-Rr-ZGN" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="596" y="-243.32833583208398"/>
+        </scene>
+        <!--Table Of Password Settings-->
+        <scene sceneID="NJf-eM-xgo">
+            <objects>
+                <tableViewController storyboardIdentifier="Password Settings Table View Controller" title="Table Of Password Settings" id="ns5-7X-GCL" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="sz9-BT-9IW">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell_PasswordSetting" id="dXF-T9-bKf">
+                                <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="dXF-T9-bKf" id="Dnd-G7-fzb">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="ns5-7X-GCL" id="nnY-SO-PEe"/>
+                            <outlet property="delegate" destination="ns5-7X-GCL" id="v8u-NG-PbK"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" id="hOg-Bk-yf4">
+                        <barButtonItem key="leftBarButtonItem" title="Done" id="CBM-72-9Or">
+                            <connections>
+                                <segue destination="S4R-Ja-viH" kind="presentation" identifier="segway_ToPasswordGenerator2" modalPresentationStyle="fullScreen" modalTransitionStyle="flipHorizontal" id="oUB-bA-zx1"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="C0V-62-u28" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1289" y="437"/>
+        </scene>
+        <!--Table Of Saved Passwords-->
+        <scene sceneID="OMd-Hq-Bvn">
+            <objects>
+                <tableViewController title="Table Of Saved Passwords" id="lgI-4z-UfU" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="jVz-ey-vjk">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell_SavedPassword" textLabel="Wnh-Bb-Co2" detailTextLabel="8Y7-4k-eL1" style="IBUITableViewCellStyleValue1" id="7ii-wD-HOr">
+                                <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="7ii-wD-HOr" id="9Bl-Kc-d2N">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Wnh-Bb-Co2">
+                                            <rect key="frame" x="15" y="11" width="34" height="21"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Detail" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="8Y7-4k-eL1">
+                                            <rect key="frame" x="316" y="11" width="44" height="21"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                </tableViewCellContentView>
+                                <accessibility key="accessibilityConfiguration" hint="This Password is Saved." identifier="cell_SavedPassword" label="cell_SavedPassword"/>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="lgI-4z-UfU" id="6WW-4c-B7b"/>
+                            <outlet property="delegate" destination="lgI-4z-UfU" id="n9y-ZO-Y8R"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" id="KYw-5f-17t">
+                        <barButtonItem key="leftBarButtonItem" title="Done" id="sp0-cQ-w6L">
+                            <connections>
+                                <segue destination="S4R-Ja-viH" kind="presentation" identifier="segway_ToPasswordGenerator" modalPresentationStyle="fullScreen" modalTransitionStyle="flipHorizontal" id="sJf-8q-jpJ"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Dc5-xK-Qxs" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2007" y="-243"/>
+        </scene>
+        <!--Navagator To Saved Password-->
+        <scene sceneID="iwz-Cb-5Z9">
+            <objects>
+                <navigationController storyboardIdentifier="nav_ToSavedPasswords" title="Navagator To Saved Password" automaticallyAdjustsScrollViewInsets="NO" id="cku-oS-qoP" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Nwt-BH-dEM">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="lgI-4z-UfU" kind="relationship" relationship="rootViewController" id="Za0-Y8-SqI"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="j7r-pe-mfe" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1288.8" y="-243.32833583208398"/>
+        </scene>
+        <!--Navagator To Password Settings-->
+        <scene sceneID="hzM-Jy-fPT">
+            <objects>
+                <navigationController storyboardIdentifier="nav_ToPasswordSettings" title="Navagator To Password Settings" automaticallyAdjustsScrollViewInsets="NO" id="RwS-Xb-BMN" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="bk4-Tx-PQW">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="ns5-7X-GCL" kind="relationship" relationship="rootViewController" id="etL-Mh-mSv"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="FMD-83-gM4" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="596" y="437"/>
+        </scene>
+    </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="oUB-bA-zx1"/>
+    </inferredMetricsTieBreakers>
+</document>

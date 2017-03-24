@@ -1,0 +1,45 @@
+
+/* Class = "UILabel"; text = "Password Length:"; ObjectID = "2a7-Y6-R8u"; */
+"2a7-Y6-R8u.text" = "Password Length:";
+
+/* Class = "UILabel"; text = "Lowercase:"; ObjectID = "5MG-7P-Kv8"; */
+"5MG-7P-Kv8.text" = "Lowercase:";
+
+/* Class = "UILabel"; text = "Copyright (c)  Surfside Software Solutions"; ObjectID = "6JQ-T3-sgJ"; */
+"6JQ-T3-sgJ.text" = "Copyright (c)  Surfside Software Solutions";
+
+/* Class = "UILabel"; text = "Numbers:"; ObjectID = "Brf-Qx-sMl"; */
+"Brf-Qx-sMl.text" = "Numbers:";
+
+/* Class = "UILabel"; accessibilityHint = "Password Generator Application"; ObjectID = "Inb-ry-GMg"; */
+"Inb-ry-GMg.accessibilityHint" = "Password Generator Application";
+
+/* Class = "UILabel"; accessibilityLabel = "Password Generator"; ObjectID = "Inb-ry-GMg"; */
+"Inb-ry-GMg.accessibilityLabel" = "Password Generator";
+
+/* Class = "UILabel"; text = "Password Generator"; ObjectID = "Inb-ry-GMg"; */
+"Inb-ry-GMg.text" = "Password Generator";
+
+/* Class = "UILabel"; text = "Uppercase:"; ObjectID = "NJN-hU-W0H"; */
+"NJN-hU-W0H.text" = "Uppercase:";
+
+/* Class = "UILabel"; text = "Exclude Similar:"; ObjectID = "Vf5-Qw-dBA"; */
+"Vf5-Qw-dBA.text" = "Exclude Similar:";
+
+/* Class = "UIButton"; normalTitle = "Save This Password"; ObjectID = "ZYM-xz-Jql"; */
+"ZYM-xz-Jql.normalTitle" = "Save This Password";
+
+/* Class = "UITextField"; placeholder = "15"; ObjectID = "d2E-zK-3zF"; */
+"d2E-zK-3zF.placeholder" = "15";
+
+/* Class = "UILabel"; text = "Save My Password:"; ObjectID = "gES-Eo-lOL"; */
+"gES-Eo-lOL.text" = "Save My Password:";
+
+/* Class = "UILabel"; text = "Exclude Ambiguous:"; ObjectID = "mUq-0s-pBa"; */
+"mUq-0s-pBa.text" = "Exclude Ambiguous:";
+
+/* Class = "UIButton"; normalTitle = "Generate Password"; ObjectID = "vhX-3U-Pol"; */
+"vhX-3U-Pol.normalTitle" = "Generate Password";
+
+/* Class = "UILabel"; text = "Symbols:"; ObjectID = "zOk-qn-0lZ"; */
+"zOk-qn-0lZ.text" = "Symbols:";
