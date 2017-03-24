@@ -13,6 +13,9 @@
 @end
 
 @implementation DataViewController
+- (IBAction)GenerateNewPassword:(id)sender {
+  NSLog(@"\'Generate Password\' Button Pressed.");
+}
 
 - (void)viewDidLoad {
   [super viewDidLoad];

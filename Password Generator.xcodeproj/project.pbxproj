@@ -11,7 +11,6 @@
 		B00939C41E3063DC002F71D0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B00939C21E3063DC002F71D0 /* LaunchScreen.storyboard */; };
 		B00939CF1E3063DC002F71D0 /* Password_GeneratorTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B00939CE1E3063DC002F71D0 /* Password_GeneratorTests.m */; };
 		B00939DA1E3063DC002F71D0 /* Password_GeneratorUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = B00939D91E3063DC002F71D0 /* Password_GeneratorUITests.m */; };
-		B0416EB81E7F4AF1004B9CDF /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B0416EB71E7F4AF1004B9CDF /* Info.plist */; };
 		B0416EB91E7F4AF1004B9CDF /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B0416EB71E7F4AF1004B9CDF /* Info.plist */; };
 		B0416EBA1E7F4AF1004B9CDF /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B0416EB71E7F4AF1004B9CDF /* Info.plist */; };
 		B0416EBC1E7F4B65004B9CDF /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B0416EBB1E7F4B65004B9CDF /* Default-568h@2x.png */; };
@@ -413,7 +412,6 @@
 				B0E63E051E7E220D00E10DC9 /* LaunchImage.xcassets in Resources */,
 				B088D2AF1E7E1D16004286C3 /* Applcon60x60@3x.png in Resources */,
 				B088D2941E7E1626004286C3 /* AppIcon57x57.png in Resources */,
-				B0416EB81E7F4AF1004B9CDF /* Info.plist in Resources */,
 				B088D2A81E7E1BB3004286C3 /* AppIcon20x20@2x.png in Resources */,
 				B088D2791E7E1542004286C3 /* Assets.xcassets in Resources */,
 				B088D2901E7E1626004286C3 /* AppIcon40x40.png in Resources */,
