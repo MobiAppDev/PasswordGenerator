@@ -9,6 +9,7 @@
 #import "DataViewController.h"
 
 @interface DataViewController ()
+@property (weak, nonatomic) IBOutlet UIButton *displayPassword;
 
 @end
 
@@ -18,6 +19,8 @@
 {
 
   NSLog(@"\'Generate Password\' button touched up inside.");
+
+_displayPassword.titleLabel.text = @"PkYm8R$dz.*FGa";
 
 }
 

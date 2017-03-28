@@ -71,6 +71,7 @@
                                             <color key="titleColor" red="0.0" green="0.0" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
                                         </state>
                                         <connections>
+                                            <action selector="GeneratePassword:" destination="S4R-Ja-viH" eventType="touchUpInside" id="0OE-JU-hJb"/>
                                             <segue destination="RwS-Xb-BMN" kind="presentation" identifier="segway_NavagateToPasswordSettings" modalPresentationStyle="fullScreen" modalTransitionStyle="flipHorizontal" id="bgE-hr-uKv"/>
                                         </connections>
                                     </button>
@@ -142,6 +143,7 @@
                     </view>
                     <connections>
                         <outlet property="dataLabel" destination="cF2-Le-7mQ" id="3EH-BK-JV6"/>
+                        <outlet property="displayPassword" destination="2ze-Mo-hPB" id="pfz-O3-ZEQ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="GmD-Rr-ZGN" sceneMemberID="firstResponder"/>
@@ -152,17 +154,45 @@
         <scene sceneID="NJf-eM-xgo">
             <objects>
                 <tableViewController storyboardIdentifier="Password Settings Table View Controller" title="Table Of Password Settings" id="ns5-7X-GCL" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="sz9-BT-9IW">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="50" sectionHeaderHeight="28" sectionFooterHeight="28" id="sz9-BT-9IW">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell_PasswordSetting" id="dXF-T9-bKf">
-                                <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell_PasswordSetting" rowHeight="50" id="dXF-T9-bKf">
+                                <rect key="frame" x="0.0" y="28" width="375" height="50"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="dXF-T9-bKf" id="Dnd-G7-fzb">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43"/>
-                                    <autoresizingMask key="autoresizingMask"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES"/>
+                                    <subviews>
+                                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="nZ1-tz-nGY">
+                                            <rect key="frame" x="320" y="1.5" width="46" height="47.5"/>
+                                            <subviews>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Usm-i2-eHS">
+                                                    <rect key="frame" x="0.0" y="0.0" width="46" height="47.5"/>
+                                                    <accessibility key="accessibilityConfiguration" hint="Select this button for more information" identifier="btn_moreDetailedCellInformation" label="More"/>
+                                                    <state key="normal" backgroundImage="AppIcon20x20.png">
+                                                        <attributedString key="attributedTitle">
+                                                            <fragment>
+                                                                <string key="content">More</string>
+                                                                <attributes>
+                                                                    <font key="NSFont" size="20" name=".AppleSystemUIFont"/>
+                                                                    <paragraphStyle key="NSParagraphStyle" alignment="right" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                                </attributes>
+                                                            </fragment>
+                                                        </attributedString>
+                                                    </state>
+                                                </button>
+                                            </subviews>
+                                        </stackView>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstAttribute="trailing" secondItem="nZ1-tz-nGY" secondAttribute="trailing" constant="9" id="Pvq-f5-GKl"/>
+                                        <constraint firstAttribute="bottom" secondItem="nZ1-tz-nGY" secondAttribute="bottom" id="f4F-b5-fuI"/>
+                                        <constraint firstAttribute="bottom" secondItem="nZ1-tz-nGY" secondAttribute="bottom" constant="1" id="fG7-fA-YQk"/>
+                                        <constraint firstAttribute="trailingMargin" secondItem="nZ1-tz-nGY" secondAttribute="trailing" constant="1" id="nOI-on-pyi"/>
+                                    </constraints>
                                 </tableViewCellContentView>
                             </tableViewCell>
                         </prototypes>
@@ -171,6 +201,7 @@
                             <outlet property="delegate" destination="ns5-7X-GCL" id="v8u-NG-PbK"/>
                         </connections>
                     </tableView>
+                    <toolbarItems/>
                     <navigationItem key="navigationItem" id="hOg-Bk-yf4">
                         <barButtonItem key="leftBarButtonItem" title="Done" id="CBM-72-9Or">
                             <connections>
@@ -178,10 +209,11 @@
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="C0V-62-u28" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1289" y="437"/>
+            <point key="canvasLocation" x="1288.8" y="436.73163418290858"/>
         </scene>
         <!--Table Of Saved Passwords-->
         <scene sceneID="OMd-Hq-Bvn">
@@ -272,6 +304,9 @@
             <point key="canvasLocation" x="596" y="437"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="AppIcon20x20.png" width="20" height="20"/>
+    </resources>
     <inferredMetricsTieBreakers>
         <segue reference="oUB-bA-zx1"/>
     </inferredMetricsTieBreakers>
