@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="703-4V-yAM">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="703-4V-yAM">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -167,7 +167,7 @@
                                     <autoresizingMask key="autoresizingMask" flexibleMinX="YES"/>
                                     <subviews>
                                         <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="nZ1-tz-nGY">
-                                            <rect key="frame" x="320" y="1.5" width="46" height="47.5"/>
+                                            <rect key="frame" x="320" y="0.0" width="46" height="47.5"/>
                                             <subviews>
                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Usm-i2-eHS">
                                                     <rect key="frame" x="0.0" y="0.0" width="46" height="47.5"/>
@@ -175,7 +175,8 @@
                                                     <state key="normal" backgroundImage="AppIcon20x20.png">
                                                         <attributedString key="attributedTitle">
                                                             <fragment>
-                                                                <string key="content">More</string>
+                                                                <string key="content">More
+</string>
                                                                 <attributes>
                                                                     <font key="NSFont" size="20" name=".AppleSystemUIFont"/>
                                                                     <paragraphStyle key="NSParagraphStyle" alignment="right" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
@@ -188,10 +189,8 @@
                                         </stackView>
                                     </subviews>
                                     <constraints>
-                                        <constraint firstAttribute="trailing" secondItem="nZ1-tz-nGY" secondAttribute="trailing" constant="9" id="Pvq-f5-GKl"/>
-                                        <constraint firstAttribute="bottom" secondItem="nZ1-tz-nGY" secondAttribute="bottom" id="f4F-b5-fuI"/>
-                                        <constraint firstAttribute="bottom" secondItem="nZ1-tz-nGY" secondAttribute="bottom" constant="1" id="fG7-fA-YQk"/>
-                                        <constraint firstAttribute="trailingMargin" secondItem="nZ1-tz-nGY" secondAttribute="trailing" constant="1" id="nOI-on-pyi"/>
+                                        <constraint firstItem="nZ1-tz-nGY" firstAttribute="top" secondItem="Dnd-G7-fzb" secondAttribute="top" id="jVL-w7-bek"/>
+                                        <constraint firstAttribute="trailingMargin" secondItem="nZ1-tz-nGY" secondAttribute="trailing" constant="1" id="o99-5d-4U1"/>
                                     </constraints>
                                 </tableViewCellContentView>
                             </tableViewCell>

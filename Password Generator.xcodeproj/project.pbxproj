@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		B00939CF1E3063DC002F71D0 /* Password_GeneratorTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B00939CE1E3063DC002F71D0 /* Password_GeneratorTests.m */; };
 		B00939DA1E3063DC002F71D0 /* Password_GeneratorUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = B00939D91E3063DC002F71D0 /* Password_GeneratorUITests.m */; };
+		B00982F11E97262A0012DAC5 /* ApplicationData.m in Sources */ = {isa = PBXBuildFile; fileRef = B00982F01E97262A0012DAC5 /* ApplicationData.m */; };
 		B0416EB91E7F4AF1004B9CDF /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B0416EB71E7F4AF1004B9CDF /* Info.plist */; };
 		B0416EBA1E7F4AF1004B9CDF /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B0416EB71E7F4AF1004B9CDF /* Info.plist */; };
 		B0416EBC1E7F4B65004B9CDF /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B0416EBB1E7F4B65004B9CDF /* Default-568h@2x.png */; };
@@ -76,6 +77,8 @@
 		B00939D51E3063DC002F71D0 /* Password GeneratorUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Password GeneratorUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B00939D91E3063DC002F71D0 /* Password_GeneratorUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Password_GeneratorUITests.m; sourceTree = "<group>"; };
 		B00939DB1E3063DC002F71D0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B00982EF1E97262A0012DAC5 /* ApplicationData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ApplicationData.h; sourceTree = "<group>"; };
+		B00982F01E97262A0012DAC5 /* ApplicationData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ApplicationData.m; sourceTree = "<group>"; };
 		B0416EB71E7F4AF1004B9CDF /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = "Supporting Files/Info.plist"; sourceTree = "<group>"; };
 		B0416EBB1E7F4B65004B9CDF /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default-568h@2x.png"; path = "Supporting Files/icons/Default-568h@2x.png"; sourceTree = "<group>"; };
 		B088D2681E7E13F5004286C3 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = AppDelegate/AppDelegate.h; sourceTree = "<group>"; };
@@ -166,6 +169,7 @@
 		B00939AD1E3063DC002F71D0 /* Password Generator */ = {
 			isa = PBXGroup;
 			children = (
+				B00982EE1E97262A0012DAC5 /* ApplicationData */,
 				B088D23D1E7E1114004286C3 /* AppDelegate */,
 				B088D23B1E7E10BA004286C3 /* RootViewController */,
 				B088D23C1E7E10FD004286C3 /* DataViewcController */,
@@ -204,6 +208,15 @@
 				B00939DB1E3063DC002F71D0 /* Info.plist */,
 			);
 			path = "Password GeneratorUITests";
+			sourceTree = "<group>";
+		};
+		B00982EE1E97262A0012DAC5 /* ApplicationData */ = {
+			isa = PBXGroup;
+			children = (
+				B00982EF1E97262A0012DAC5 /* ApplicationData.h */,
+				B00982F01E97262A0012DAC5 /* ApplicationData.m */,
+			);
+			path = ApplicationData;
 			sourceTree = "<group>";
 		};
 		B088D2391E7E1090004286C3 /* Storyboards */ = {
@@ -452,6 +465,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B00982F11E97262A0012DAC5 /* ApplicationData.m in Sources */,
 				B088D26A1E7E13F5004286C3 /* AppDelegate.m in Sources */,
 				B088D26D1E7E1411004286C3 /* RootViewController.m in Sources */,
 				B088D2731E7E1442004286C3 /* ModelController.m in Sources */,

@@ -9,16 +9,24 @@
 #import "DataViewController.h"
 
 @interface DataViewController ()
+
 @property (weak, nonatomic) IBOutlet UIButton *displayPassword;
+@property (weak, nonatomic) NSString *aNewPasswordString;
+
 
 @end
 
 @implementation DataViewController
+@synthesize aNewPasswordString = _aNewPasswordString;
 
 - (IBAction)GeneratePassword:(id)sender 
 {
 
   NSLog(@"\'Generate Password\' button touched up inside.");
+
+//var password = @"24"
+//NSUserDefaults.standardUserDefaults().setObject(password, forKey: "storedPassword")
+//println(NSUserDefaults.standardUserDefaults().objectForKey("storedPassword"))
 
 _displayPassword.titleLabel.text = @"PkYm8R$dz.*FGa";
 
