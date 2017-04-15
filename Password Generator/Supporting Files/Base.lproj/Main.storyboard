@@ -155,7 +155,7 @@
         <scene sceneID="NJf-eM-xgo">
             <objects>
                 <tableViewController storyboardIdentifier="Password Settings Table View Controller" title="Table Of Password Settings" id="ns5-7X-GCL" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="50" sectionHeaderHeight="28" sectionFooterHeight="28" id="sz9-BT-9IW">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="50" sectionHeaderHeight="28" sectionFooterHeight="28" id="sz9-BT-9IW" userLabel="Password Settings Table View">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -208,7 +208,7 @@
                         </connections>
                     </tableView>
                     <toolbarItems/>
-                    <navigationItem key="navigationItem" id="hOg-Bk-yf4">
+                    <navigationItem key="navigationItem" title="Password Settings" prompt="This is a list of Password Settings" id="hOg-Bk-yf4">
                         <barButtonItem key="leftBarButtonItem" title="Done" id="CBM-72-9Or">
                             <connections>
                                 <segue destination="S4R-Ja-viH" kind="presentation" identifier="segway_ToPasswordGenerator2" modalPresentationStyle="fullScreen" modalTransitionStyle="flipHorizontal" id="oUB-bA-zx1"/>
@@ -219,12 +219,12 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="C0V-62-u28" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1288.8" y="436.73163418290858"/>
+            <point key="canvasLocation" x="1342" y="599"/>
         </scene>
-        <!--View Controller-->
+        <!--Detail View Controller Of Saved Passwords-->
         <scene sceneID="L6E-TW-1Jf">
             <objects>
-                <viewController id="a6M-LW-wd7" sceneMemberID="viewController">
+                <viewController id="a6M-LW-wd7" userLabel="Detail View Controller Of Saved Passwords" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="CFv-ck-rvn"/>
                         <viewControllerLayoutGuide type="bottom" id="7Dl-kY-CB1"/>
@@ -250,33 +250,33 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Woq-C2-cXd" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2005.5999999999999" y="436.73163418290858"/>
+            <point key="canvasLocation" x="2146" y="599"/>
         </scene>
         <!--Table Of Saved Passwords-->
         <scene sceneID="OMd-Hq-Bvn">
             <objects>
                 <tableViewController title="Table Of Saved Passwords" id="lgI-4z-UfU" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="jVz-ey-vjk">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="jVz-ey-vjk" userLabel="Table View Of Passwords">
+                        <rect key="frame" x="0.0" y="94" width="375" height="573"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell_SavedPassword" textLabel="Wnh-Bb-Co2" detailTextLabel="8Y7-4k-eL1" style="IBUITableViewCellStyleValue1" id="7ii-wD-HOr">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell_SavedPassword" textLabel="Wnh-Bb-Co2" detailTextLabel="8Y7-4k-eL1" style="IBUITableViewCellStyleValue1" id="7ii-wD-HOr" userLabel="Cell For Saved Password">
                                 <rect key="frame" x="0.0" y="28" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="7ii-wD-HOr" id="9Bl-Kc-d2N">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Wnh-Bb-Co2">
-                                            <rect key="frame" x="15" y="12" width="33.5" height="20.5"/>
+                                            <rect key="frame" x="15" y="11" width="34" height="21"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Detail" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="8Y7-4k-eL1">
-                                            <rect key="frame" x="316" y="12" width="44" height="20.5"/>
+                                            <rect key="frame" x="316" y="11" width="44" height="21"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <nil key="textColor"/>
@@ -284,7 +284,7 @@
                                         </label>
                                     </subviews>
                                 </tableViewCellContentView>
-                                <accessibility key="accessibilityConfiguration" hint="This Password is Saved." identifier="cell_SavedPassword" label="cell_SavedPassword"/>
+                                <accessibility key="accessibilityConfiguration" hint="This Password is Saved." identifier="Cell For Saved Password" label="Cell For Saved Password"/>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -292,7 +292,8 @@
                             <outlet property="delegate" destination="lgI-4z-UfU" id="n9y-ZO-Y8R"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" id="KYw-5f-17t">
+                    <navigationItem key="navigationItem" title="Saved Passwords" prompt="This is a list of saved passwords." id="KYw-5f-17t" userLabel="Navigation Bar Of Passwords">
+                        <barButtonItem key="backBarButtonItem" title="Back" id="VLd-gn-Xqe"/>
                         <barButtonItem key="leftBarButtonItem" title="Done" id="sp0-cQ-w6L">
                             <connections>
                                 <segue destination="S4R-Ja-viH" kind="presentation" identifier="segway_ToPasswordGenerator" modalPresentationStyle="fullScreen" modalTransitionStyle="flipHorizontal" id="sJf-8q-jpJ"/>
@@ -302,14 +303,14 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Dc5-xK-Qxs" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2007" y="-243"/>
+            <point key="canvasLocation" x="2146" y="-243"/>
         </scene>
         <!--Navagator To Saved Password-->
         <scene sceneID="iwz-Cb-5Z9">
             <objects>
-                <navigationController storyboardIdentifier="nav_ToSavedPasswords" title="Navagator To Saved Password" automaticallyAdjustsScrollViewInsets="NO" id="cku-oS-qoP" sceneMemberID="viewController">
+                <navigationController storyboardIdentifier="nav_ToSavedPasswords" title="Navagator To Saved Password" automaticallyAdjustsScrollViewInsets="NO" id="cku-oS-qoP" userLabel="Navagator To Saved Password" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Nwt-BH-dEM">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" translucent="NO" shadowImage="BackButton31x31.png" backIndicatorImage="BackButton31x31.png" backIndicatorTransitionMaskImage="BackButton31x31.png" id="Nwt-BH-dEM" userLabel="Navigation Bar To Saved Password">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -320,14 +321,14 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="j7r-pe-mfe" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1288.8" y="-243.32833583208398"/>
+            <point key="canvasLocation" x="1342" y="-243"/>
         </scene>
         <!--Navagator To Password Settings-->
         <scene sceneID="hzM-Jy-fPT">
             <objects>
                 <navigationController storyboardIdentifier="nav_ToPasswordSettings" title="Navagator To Password Settings" automaticallyAdjustsScrollViewInsets="NO" id="RwS-Xb-BMN" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="bk4-Tx-PQW">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" shadowImage="BackButton31x31.png" backIndicatorImage="BackButton31x31.png" backIndicatorTransitionMaskImage="BackButton31x31.png" id="bk4-Tx-PQW" userLabel="Navigation Bar To Password Settings">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -338,14 +339,15 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="FMD-83-gM4" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="596" y="437"/>
+            <point key="canvasLocation" x="596" y="599"/>
         </scene>
     </scenes>
     <resources>
         <image name="AppIcon20x20.png" width="20" height="20"/>
+        <image name="BackButton31x31.png" width="31" height="31"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="bRd-ne-RZr"/>
         <segue reference="oUB-bA-zx1"/>
+        <segue reference="bRd-ne-RZr"/>
     </inferredMetricsTieBreakers>
 </document>

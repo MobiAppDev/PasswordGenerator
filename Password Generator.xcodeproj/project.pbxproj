@@ -47,6 +47,7 @@
 		B088D2AB1E7E1C41004286C3 /* AppIcon29x29@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = B088D2AA1E7E1C41004286C3 /* AppIcon29x29@3x.png */; };
 		B088D2AD1E7E1CB2004286C3 /* AppIcon40x40@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = B088D2AC1E7E1CB2004286C3 /* AppIcon40x40@3x.png */; };
 		B088D2AF1E7E1D16004286C3 /* Applcon60x60@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = B088D2AE1E7E1D16004286C3 /* Applcon60x60@3x.png */; };
+		B094AF2D1EA1BB9000AD5EAC /* BackButton31x31.png in Resources */ = {isa = PBXBuildFile; fileRef = B094AF2C1EA1BB9000AD5EAC /* BackButton31x31.png */; };
 		B0D2C9D31E84F187004C6783 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B0D2C9D01E84EE00004C6783 /* Main.storyboard */; };
 		B0E63E051E7E220D00E10DC9 /* LaunchImage.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B0E63E041E7E220D00E10DC9 /* LaunchImage.xcassets */; };
 /* End PBXBuildFile section */
@@ -117,6 +118,7 @@
 		B088D2AA1E7E1C41004286C3 /* AppIcon29x29@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "AppIcon29x29@3x.png"; path = "Supporting Files/icons/AppIcon29x29@3x.png"; sourceTree = "<group>"; };
 		B088D2AC1E7E1CB2004286C3 /* AppIcon40x40@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "AppIcon40x40@3x.png"; path = "Supporting Files/icons/AppIcon40x40@3x.png"; sourceTree = "<group>"; };
 		B088D2AE1E7E1D16004286C3 /* Applcon60x60@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Applcon60x60@3x.png"; path = "Supporting Files/icons/Applcon60x60@3x.png"; sourceTree = "<group>"; };
+		B094AF2C1EA1BB9000AD5EAC /* BackButton31x31.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = BackButton31x31.png; path = "Supporting Files/icons/BackButton31x31.png"; sourceTree = "<group>"; };
 		B0D2C9D11E84EE00004C6783 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = "Supporting Files/Base.lproj/Main.storyboard"; sourceTree = "<group>"; };
 		B0E63E041E7E220D00E10DC9 /* LaunchImage.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = LaunchImage.xcassets; path = "Supporting Files/LaunchImage.xcassets"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -292,6 +294,7 @@
 				B088D2891E7E1626004286C3 /* Applcon87x87@2x.png */,
 				B088D28A1E7E1626004286C3 /* Applcon90x90.png */,
 				B088D28B1E7E1626004286C3 /* Applcon90x90@2x.png */,
+				B094AF2C1EA1BB9000AD5EAC /* BackButton31x31.png */,
 				B088D28C1E7E1626004286C3 /* iTunesArtwork.png */,
 				B088D28D1E7E1626004286C3 /* iTunesArtwork@2x.png */,
 			);
@@ -409,6 +412,7 @@
 			files = (
 				B088D2AD1E7E1CB2004286C3 /* AppIcon40x40@3x.png in Resources */,
 				B088D2911E7E1626004286C3 /* AppIcon40x40@2x.png in Resources */,
+				B094AF2D1EA1BB9000AD5EAC /* BackButton31x31.png in Resources */,
 				B088D28E1E7E1626004286C3 /* AppIcon29x29.png in Resources */,
 				B088D29A1E7E1626004286C3 /* AppIcon76x76.png in Resources */,
 				B088D2AB1E7E1C41004286C3 /* AppIcon29x29@3x.png in Resources */,
