@@ -156,7 +156,7 @@
             <objects>
                 <tableViewController storyboardIdentifier="Password Settings Table View Controller" title="Table Of Password Settings" id="ns5-7X-GCL" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="50" sectionHeaderHeight="28" sectionFooterHeight="28" id="sz9-BT-9IW" userLabel="Password Settings Table View">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="94" width="375" height="573"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
@@ -208,7 +208,8 @@
                         </connections>
                     </tableView>
                     <toolbarItems/>
-                    <navigationItem key="navigationItem" title="Password Settings" prompt="This is a list of Password Settings" id="hOg-Bk-yf4">
+                    <navigationItem key="navigationItem" title="Password Settings" prompt="This is a list of Password Settings" id="hOg-Bk-yf4" userLabel="Password Settings">
+                        <barButtonItem key="backBarButtonItem" title="Back" id="com-Pn-UdN"/>
                         <barButtonItem key="leftBarButtonItem" title="Done" id="CBM-72-9Or">
                             <connections>
                                 <segue destination="S4R-Ja-viH" kind="presentation" identifier="segway_ToPasswordGenerator2" modalPresentationStyle="fullScreen" modalTransitionStyle="flipHorizontal" id="oUB-bA-zx1"/>
@@ -229,7 +230,7 @@
                         <viewControllerLayoutGuide type="top" id="CFv-ck-rvn"/>
                         <viewControllerLayoutGuide type="bottom" id="7Dl-kY-CB1"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="Rfa-4r-4yc">
+                    <view key="view" contentMode="scaleToFill" id="Rfa-4r-4yc" userLabel="View Of Details Background">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
@@ -238,13 +239,27 @@
                                 <accessibility key="accessibilityConfiguration" hint="Select this button to return to the previous list" identifier="btn_ReturnToList" label="Return to List"/>
                                 <state key="normal" title="Button"/>
                             </button>
+                            <navigationBar contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="5W7-HR-FaO">
+                                <rect key="frame" x="1" y="-10" width="375" height="74"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="suY-Xp-c4D"/>
+                                </constraints>
+                                <items>
+                                    <navigationItem title="Password Detail" prompt="Password Detail" id="hkq-ud-9oA" userLabel="Password Detail">
+                                        <barButtonItem key="backBarButtonItem" title="Back" id="awE-5a-XSX"/>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="5W7-HR-FaO" secondAttribute="trailing" id="7nb-OB-3JX"/>
+                            <constraint firstItem="5W7-HR-FaO" firstAttribute="leading" secondItem="Rfa-4r-4yc" secondAttribute="leadingMargin" id="CTr-fw-FTJ"/>
                             <constraint firstItem="yyi-gI-AJv" firstAttribute="top" secondItem="CFv-ck-rvn" secondAttribute="bottom" constant="580" id="Q8L-dx-Hgf"/>
                             <constraint firstAttribute="trailingMargin" secondItem="yyi-gI-AJv" secondAttribute="trailing" constant="3" id="QE3-lh-Laq"/>
                             <constraint firstItem="7Dl-kY-CB1" firstAttribute="top" secondItem="yyi-gI-AJv" secondAttribute="bottom" constant="17" id="S0X-2d-9JE"/>
                             <constraint firstItem="yyi-gI-AJv" firstAttribute="leading" secondItem="Rfa-4r-4yc" secondAttribute="leadingMargin" constant="-2" id="ak6-6s-PIP"/>
+                            <constraint firstItem="5W7-HR-FaO" firstAttribute="top" secondItem="CFv-ck-rvn" secondAttribute="bottom" id="prL-EG-OmM"/>
                         </constraints>
                     </view>
                 </viewController>
@@ -310,7 +325,8 @@
             <objects>
                 <navigationController storyboardIdentifier="nav_ToSavedPasswords" title="Navagator To Saved Password" automaticallyAdjustsScrollViewInsets="NO" id="cku-oS-qoP" userLabel="Navagator To Saved Password" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" translucent="NO" shadowImage="BackButton31x31.png" backIndicatorImage="BackButton31x31.png" backIndicatorTransitionMaskImage="BackButton31x31.png" id="Nwt-BH-dEM" userLabel="Navigation Bar To Saved Password">
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" translucent="NO"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" translucent="NO" shadowImage="BackButton31x31.png" backIndicatorImage="BackButton31x31.png" backIndicatorTransitionMaskImage="BackButton31x31.png" id="Nwt-BH-dEM" userLabel="Navigation Bar To Saved Password">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -328,7 +344,8 @@
             <objects>
                 <navigationController storyboardIdentifier="nav_ToPasswordSettings" title="Navagator To Password Settings" automaticallyAdjustsScrollViewInsets="NO" id="RwS-Xb-BMN" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" shadowImage="BackButton31x31.png" backIndicatorImage="BackButton31x31.png" backIndicatorTransitionMaskImage="BackButton31x31.png" id="bk4-Tx-PQW" userLabel="Navigation Bar To Password Settings">
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" translucent="NO"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" translucent="NO" shadowImage="BackButton31x31.png" backIndicatorImage="BackButton31x31.png" backIndicatorTransitionMaskImage="BackButton31x31.png" id="bk4-Tx-PQW" userLabel="Navigation Bar To Password Settings">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -347,7 +364,7 @@
         <image name="BackButton31x31.png" width="31" height="31"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="oUB-bA-zx1"/>
+        <segue reference="sJf-8q-jpJ"/>
         <segue reference="bRd-ne-RZr"/>
     </inferredMetricsTieBreakers>
 </document>
