@@ -153,9 +153,9 @@
         <!--Table Of Password Settings-->
         <scene sceneID="NJf-eM-xgo">
             <objects>
-                <tableViewController storyboardIdentifier="Password Settings Table View Controller" title="Table Of Password Settings" id="ns5-7X-GCL" customClass="PasswordSettingsController" sceneMemberID="viewController">
+                <tableViewController storyboardIdentifier="PasswordSettingsController" title="Table Of Password Settings" id="ns5-7X-GCL" userLabel="Table Of Password Settings" customClass="PasswordSettingsController" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="50" sectionHeaderHeight="28" sectionFooterHeight="28" id="sz9-BT-9IW" userLabel="Table View Of Password Settings">
-                        <rect key="frame" x="0.0" y="94" width="375" height="573"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
@@ -182,7 +182,7 @@
                                         </label>
                                     </subviews>
                                 </tableViewCellContentView>
-                                <accessibility key="accessibilityConfiguration" hint="This Setting is saved." identifier="Cell For Password Setting" label="Cell For Password Setting"/>
+                                <accessibility key="accessibilityConfiguration" hint="This Setting is Saved." identifier="Cell For Password Setting" label="Cell For Password Setting"/>
                                 <connections>
                                     <segue destination="0VI-U9-wTz" kind="showDetail" id="95u-46-XeE"/>
                                 </connections>
@@ -203,6 +203,7 @@
                         </barButtonItem>
                     </navigationItem>
                     <refreshControl key="refreshControl" opaque="NO" multipleTouchEnabled="YES" contentMode="center" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" id="opD-Sm-wom">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </refreshControl>
                 </tableViewController>
@@ -286,7 +287,7 @@
             <objects>
                 <tableViewController storyboardIdentifier="SavedPasswordsController" title="Table Of Saved Passwords" id="lgI-4z-UfU" userLabel="Table Of Saved Passwords" customClass="SavedPasswordsController" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="jVz-ey-vjk" userLabel="Table View Of Passwords">
-                        <rect key="frame" x="0.0" y="94" width="375" height="573"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
@@ -333,6 +334,7 @@
                         </barButtonItem>
                     </navigationItem>
                     <refreshControl key="refreshControl" opaque="NO" multipleTouchEnabled="YES" contentMode="center" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" id="paa-QM-mo3">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </refreshControl>
                 </tableViewController>
@@ -340,10 +342,10 @@
             </objects>
             <point key="canvasLocation" x="2084" y="597"/>
         </scene>
-        <!--Navagator To Saved Password-->
+        <!--Navigator To Saved Password-->
         <scene sceneID="iwz-Cb-5Z9">
             <objects>
-                <navigationController storyboardIdentifier="nav_ToSavedPasswords" title="Navagator To Saved Password" automaticallyAdjustsScrollViewInsets="NO" id="cku-oS-qoP" userLabel="Navagator To Saved Password" sceneMemberID="viewController">
+                <navigationController storyboardIdentifier="nav_ToSavedPasswords" title="Navigator To Saved Password" automaticallyAdjustsScrollViewInsets="NO" id="cku-oS-qoP" userLabel="Navigator To Saved Password" sceneMemberID="viewController">
                     <toolbarItems/>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" translucent="NO"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" translucent="NO" shadowImage="BackButton31x31.png" backIndicatorImage="BackButton31x31.png" backIndicatorTransitionMaskImage="BackButton31x31.png" id="Nwt-BH-dEM" userLabel="Navigation Bar To Saved Password">
@@ -359,10 +361,10 @@
             </objects>
             <point key="canvasLocation" x="1342" y="597"/>
         </scene>
-        <!--Navagator To Password Settings-->
+        <!--Navigator to Password Settings-->
         <scene sceneID="hzM-Jy-fPT">
             <objects>
-                <navigationController storyboardIdentifier="nav_ToPasswordSettings" title="Navagator To Password Settings" automaticallyAdjustsScrollViewInsets="NO" id="RwS-Xb-BMN" sceneMemberID="viewController">
+                <navigationController storyboardIdentifier="nav_ToPasswordSettings" title="Navigator To Password Settings" automaticallyAdjustsScrollViewInsets="NO" id="RwS-Xb-BMN" userLabel="Navigator to Password Settings" sceneMemberID="viewController">
                     <toolbarItems/>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" translucent="NO"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" translucent="NO" shadowImage="BackButton31x31.png" backIndicatorImage="BackButton31x31.png" backIndicatorTransitionMaskImage="BackButton31x31.png" id="bk4-Tx-PQW" userLabel="Navigation Bar To Password Settings">
