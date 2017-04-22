@@ -3,8 +3,8 @@
 //  Password Generator
 //
 //  Created by Wayne Hill on 4/21/17.
-//  Copyright © 2017 Surfside Software Solutions. All rights reserved.
-//
+//  Copyright © 2017 Surfside Software Solutions. 
+//  All rights reserved.
 
 #import "SavedPasswordsController.h"
 
@@ -32,12 +32,12 @@
 #pragma mark - Table view data source
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
-//return the number of sections
+    //return the number of sections in table
     return 1;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-// return the number of rows in each section
+    // return the number of rows in each section
     return 3;
 }
 
@@ -47,7 +47,7 @@
     // Configure the cell...
     cell.textLabel.text = @"Test";
 
-    return cell;
+  return cell;
 }
 
 

@@ -1,5 +1,5 @@
 //
-//  SavedPasswordsController.h
+//  PasswordSettingsDetailViewController.h
 //  Password Generator
 //
 //  Created by Wayne Hill on 4/21/17.
@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface SavedPasswordsController :UITableViewController
+@interface PasswordSettingsDetailViewController : UIViewController
 
 @end

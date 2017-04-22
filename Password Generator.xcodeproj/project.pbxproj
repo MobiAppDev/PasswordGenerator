@@ -52,6 +52,7 @@
 		B0DBE3E71EAAD90A00CA48DC /* SavedPasswordsController.m in Sources */ = {isa = PBXBuildFile; fileRef = B0DBE3E61EAAD90A00CA48DC /* SavedPasswordsController.m */; };
 		B0DBE3F01EAADB2E00CA48DC /* SavedPasswordsDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B0DBE3EF1EAADB2E00CA48DC /* SavedPasswordsDetailViewController.m */; };
 		B0DBE3F41EAAE67300CA48DC /* PasswordSettingsController.m in Sources */ = {isa = PBXBuildFile; fileRef = B0DBE3F31EAAE67300CA48DC /* PasswordSettingsController.m */; };
+		B0DBE3F91EAAEBF900CA48DC /* PasswordSettingsDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B0DBE3F71EAAEBF900CA48DC /* PasswordSettingsDetailViewController.m */; };
 		B0E63E051E7E220D00E10DC9 /* LaunchImage.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B0E63E041E7E220D00E10DC9 /* LaunchImage.xcassets */; };
 /* End PBXBuildFile section */
 
@@ -129,6 +130,8 @@
 		B0DBE3EF1EAADB2E00CA48DC /* SavedPasswordsDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SavedPasswordsDetailViewController.m; sourceTree = "<group>"; };
 		B0DBE3F21EAAE67300CA48DC /* PasswordSettingsController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PasswordSettingsController.h; sourceTree = "<group>"; };
 		B0DBE3F31EAAE67300CA48DC /* PasswordSettingsController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PasswordSettingsController.m; sourceTree = "<group>"; };
+		B0DBE3F61EAAEBF900CA48DC /* PasswordSettingsDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PasswordSettingsDetailViewController.h; sourceTree = "<group>"; };
+		B0DBE3F71EAAEBF900CA48DC /* PasswordSettingsDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PasswordSettingsDetailViewController.m; sourceTree = "<group>"; };
 		B0E63E041E7E220D00E10DC9 /* LaunchImage.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = LaunchImage.xcassets; path = "Supporting Files/LaunchImage.xcassets"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -185,6 +188,7 @@
 				B088D23C1E7E10FD004286C3 /* DataViewcController */,
 				B088D23A1E7E10A9004286C3 /* ModelControler */,
 				B0DBE3F11EAAE67300CA48DC /* PasswordSettingsController */,
+				B0DBE3F51EAAEBB000CA48DC /* PasswordSettingsDetailViewController */,
 				B088D23B1E7E10BA004286C3 /* RootViewController */,
 				B0DBE3E01EAAD75800CA48DC /* SavedPasswordsController */,
 				B0DBE3ED1EAADB2E00CA48DC /* SavedPasswordsDetailViewController */,
@@ -338,6 +342,15 @@
 				B0DBE3F31EAAE67300CA48DC /* PasswordSettingsController.m */,
 			);
 			path = PasswordSettingsController;
+			sourceTree = "<group>";
+		};
+		B0DBE3F51EAAEBB000CA48DC /* PasswordSettingsDetailViewController */ = {
+			isa = PBXGroup;
+			children = (
+				B0DBE3F61EAAEBF900CA48DC /* PasswordSettingsDetailViewController.h */,
+				B0DBE3F71EAAEBF900CA48DC /* PasswordSettingsDetailViewController.m */,
+			);
+			path = PasswordSettingsDetailViewController;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -509,6 +522,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B00982F11E97262A0012DAC5 /* ApplicationData.m in Sources */,
+				B0DBE3F91EAAEBF900CA48DC /* PasswordSettingsDetailViewController.m in Sources */,
 				B088D26A1E7E13F5004286C3 /* AppDelegate.m in Sources */,
 				B0DBE3F41EAAE67300CA48DC /* PasswordSettingsController.m in Sources */,
 				B0DBE3E71EAAD90A00CA48DC /* SavedPasswordsController.m in Sources */,
