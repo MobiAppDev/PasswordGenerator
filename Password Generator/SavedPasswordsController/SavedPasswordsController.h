@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface SavedPasswordsController : UITableViewController
+@interface SavedPasswordsController : 
+UITableViewController
 
 @end

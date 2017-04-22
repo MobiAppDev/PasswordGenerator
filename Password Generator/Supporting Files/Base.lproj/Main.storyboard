@@ -153,7 +153,7 @@
         <!--Table Of Password Settings-->
         <scene sceneID="NJf-eM-xgo">
             <objects>
-                <tableViewController storyboardIdentifier="Password Settings Table View Controller" title="Table Of Password Settings" id="ns5-7X-GCL" sceneMemberID="viewController">
+                <tableViewController storyboardIdentifier="Password Settings Table View Controller" title="Table Of Password Settings" id="ns5-7X-GCL" customClass="PasswordSettingsController" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="50" sectionHeaderHeight="28" sectionFooterHeight="28" id="sz9-BT-9IW" userLabel="Password Settings Table View">
                         <rect key="frame" x="0.0" y="94" width="375" height="573"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -163,7 +163,7 @@
                                 <rect key="frame" x="0.0" y="28" width="375" height="50"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="dXF-T9-bKf" id="Dnd-G7-fzb">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="50"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
                                     <autoresizingMask key="autoresizingMask" flexibleMinX="YES"/>
                                     <subviews>
                                         <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="nZ1-tz-nGY">
@@ -260,7 +260,7 @@
         <!--Table Of Saved Passwords-->
         <scene sceneID="OMd-Hq-Bvn">
             <objects>
-                <tableViewController title="Table Of Saved Passwords" id="lgI-4z-UfU" sceneMemberID="viewController">
+                <tableViewController storyboardIdentifier="SavedPasswordsController" title="Table Of Saved Passwords" id="lgI-4z-UfU" userLabel="Table Of Saved Passwords" customClass="SavedPasswordsController" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="jVz-ey-vjk" userLabel="Table View Of Passwords">
                         <rect key="frame" x="0.0" y="94" width="375" height="573"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -296,8 +296,8 @@
                             </tableViewCell>
                         </prototypes>
                         <connections>
-                            <outlet property="dataSource" destination="lgI-4z-UfU" id="6WW-4c-B7b"/>
-                            <outlet property="delegate" destination="lgI-4z-UfU" id="n9y-ZO-Y8R"/>
+                            <outlet property="dataSource" destination="lgI-4z-UfU" id="ZHW-hB-KDq"/>
+                            <outlet property="delegate" destination="lgI-4z-UfU" id="0D6-Wh-1pY"/>
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="Saved Passwords" prompt="This is a list of saved passwords." id="KYw-5f-17t" userLabel="Navigation Bar Of Passwords">
@@ -308,6 +308,9 @@
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <refreshControl key="refreshControl" opaque="NO" multipleTouchEnabled="YES" contentMode="center" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" id="paa-QM-mo3">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </refreshControl>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Dc5-xK-Qxs" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -357,6 +360,6 @@
         <image name="BackButton31x31.png" width="31" height="31"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="sJf-8q-jpJ"/>
+        <segue reference="oUB-bA-zx1"/>
     </inferredMetricsTieBreakers>
 </document>

@@ -9,8 +9,11 @@
 
 #import <UIKit/UIKit.h>
 
-@interface PasswordSettingsViewController : UIViewController
+@interface PasswordSettingsController : UITableViewController
+
 @property (strong, nonatomic) IBOutlet UILabel *dataLabel;
+
 @property (strong, nonatomic) id dataObject;
+
 @end
 

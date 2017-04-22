@@ -7,13 +7,13 @@
 //  All rights reserved.
 //
 
-#import "PasswordSettingsViewController.h"
+#import "PasswordSettingsController.h"
 
-@interface PasswordSettingsViewController ()
+@interface PasswordSettingsController ()
 
 @end
 
-@implementation PasswordSettingsViewController
+@implementation PasswordSettingsController
 /*
 - (IBAction)passwordLength:(UITextField *)sender
 {

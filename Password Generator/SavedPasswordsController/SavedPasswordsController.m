@@ -37,19 +37,19 @@
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-// return the number of rows
-    return 1;
+// return the number of rows in each section
+    return 3;
 }
 
-/*
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:<#@"reuseIdentifier"#> forIndexPath:indexPath];
-    
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"cell_SavedPassword" forIndexPath:indexPath];
+
     // Configure the cell...
-    
+    cell.textLabel.text = @"Test";
+
     return cell;
 }
-*/
+
 
 /*
 // Override to support conditional editing of the table view.
