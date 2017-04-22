@@ -7,7 +7,6 @@
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
-        <capability name="Segues with Peek and Pop" minToolsVersion="7.1"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -164,7 +163,7 @@
                                 <rect key="frame" x="0.0" y="28" width="375" height="50"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="dXF-T9-bKf" id="Dnd-G7-fzb">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="50"/>
                                     <autoresizingMask key="autoresizingMask" flexibleMinX="YES"/>
                                     <subviews>
                                         <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="nZ1-tz-nGY">
@@ -185,12 +184,6 @@
                                                             </fragment>
                                                         </attributedString>
                                                     </state>
-                                                    <connections>
-                                                        <segue destination="a6M-LW-wd7" kind="showDetail" identifier="seque_ToDetailView" id="bRd-ne-RZr">
-                                                            <segue key="commit" inheritsFrom="parent" id="61B-qr-0C1"/>
-                                                            <segue key="preview" inheritsFrom="commit" id="unx-dK-bJn"/>
-                                                        </segue>
-                                                    </connections>
                                                 </button>
                                             </subviews>
                                         </stackView>
@@ -220,7 +213,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="C0V-62-u28" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1342" y="599"/>
+            <point key="canvasLocation" x="2084" y="-243"/>
         </scene>
         <!--Detail View Controller Of Saved Passwords-->
         <scene sceneID="L6E-TW-1Jf">
@@ -239,11 +232,8 @@
                                 <accessibility key="accessibilityConfiguration" hint="Select this button to return to the previous list" identifier="btn_ReturnToList" label="Return to List"/>
                                 <state key="normal" title="Button"/>
                             </button>
-                            <navigationBar contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="5W7-HR-FaO">
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5W7-HR-FaO">
                                 <rect key="frame" x="1" y="-10" width="375" height="74"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="44" id="suY-Xp-c4D"/>
-                                </constraints>
                                 <items>
                                     <navigationItem title="Password Detail" prompt="Password Detail" id="hkq-ud-9oA" userLabel="Password Detail">
                                         <barButtonItem key="backBarButtonItem" title="Back" id="awE-5a-XSX"/>
@@ -253,26 +243,26 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstAttribute="trailingMargin" secondItem="5W7-HR-FaO" secondAttribute="trailing" id="7nb-OB-3JX"/>
-                            <constraint firstItem="5W7-HR-FaO" firstAttribute="leading" secondItem="Rfa-4r-4yc" secondAttribute="leadingMargin" id="CTr-fw-FTJ"/>
+                            <constraint firstItem="5W7-HR-FaO" firstAttribute="top" secondItem="Rfa-4r-4yc" secondAttribute="topMargin" constant="-10" id="Bv4-Bv-YCh"/>
                             <constraint firstItem="yyi-gI-AJv" firstAttribute="top" secondItem="CFv-ck-rvn" secondAttribute="bottom" constant="580" id="Q8L-dx-Hgf"/>
                             <constraint firstAttribute="trailingMargin" secondItem="yyi-gI-AJv" secondAttribute="trailing" constant="3" id="QE3-lh-Laq"/>
                             <constraint firstItem="7Dl-kY-CB1" firstAttribute="top" secondItem="yyi-gI-AJv" secondAttribute="bottom" constant="17" id="S0X-2d-9JE"/>
                             <constraint firstItem="yyi-gI-AJv" firstAttribute="leading" secondItem="Rfa-4r-4yc" secondAttribute="leadingMargin" constant="-2" id="ak6-6s-PIP"/>
-                            <constraint firstItem="5W7-HR-FaO" firstAttribute="top" secondItem="CFv-ck-rvn" secondAttribute="bottom" id="prL-EG-OmM"/>
+                            <constraint firstItem="5W7-HR-FaO" firstAttribute="leading" secondItem="Rfa-4r-4yc" secondAttribute="leadingMargin" constant="-15" id="bEf-Un-KCP"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="5W7-HR-FaO" secondAttribute="trailing" constant="-17" id="cpu-7g-qGe"/>
                         </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Woq-C2-cXd" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2146" y="599"/>
+            <point key="canvasLocation" x="2084" y="659"/>
         </scene>
         <!--Table Of Saved Passwords-->
         <scene sceneID="OMd-Hq-Bvn">
             <objects>
                 <tableViewController title="Table Of Saved Passwords" id="lgI-4z-UfU" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="jVz-ey-vjk" userLabel="Table View Of Passwords">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="94" width="375" height="573"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
@@ -300,6 +290,9 @@
                                     </subviews>
                                 </tableViewCellContentView>
                                 <accessibility key="accessibilityConfiguration" hint="This Password is Saved." identifier="Cell For Saved Password" label="Cell For Saved Password"/>
+                                <connections>
+                                    <segue destination="a6M-LW-wd7" kind="showDetail" id="Kv2-gd-QTv"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -318,7 +311,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Dc5-xK-Qxs" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2146" y="-243"/>
+            <point key="canvasLocation" x="1342" y="659"/>
         </scene>
         <!--Navagator To Saved Password-->
         <scene sceneID="iwz-Cb-5Z9">
@@ -337,7 +330,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="j7r-pe-mfe" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1342" y="-243"/>
+            <point key="canvasLocation" x="596" y="659"/>
         </scene>
         <!--Navagator To Password Settings-->
         <scene sceneID="hzM-Jy-fPT">
@@ -356,7 +349,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="FMD-83-gM4" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="596" y="599"/>
+            <point key="canvasLocation" x="1342" y="-243"/>
         </scene>
     </scenes>
     <resources>
@@ -365,6 +358,5 @@
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="sJf-8q-jpJ"/>
-        <segue reference="bRd-ne-RZr"/>
     </inferredMetricsTieBreakers>
 </document>

@@ -49,6 +49,9 @@
 		B088D2AF1E7E1D16004286C3 /* Applcon60x60@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = B088D2AE1E7E1D16004286C3 /* Applcon60x60@3x.png */; };
 		B094AF2D1EA1BB9000AD5EAC /* BackButton31x31.png in Resources */ = {isa = PBXBuildFile; fileRef = B094AF2C1EA1BB9000AD5EAC /* BackButton31x31.png */; };
 		B0D2C9D31E84F187004C6783 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B0D2C9D01E84EE00004C6783 /* Main.storyboard */; };
+		B0DBE3E41EAAD76500CA48DC /* PasswordSettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B0DBE3E31EAAD76500CA48DC /* PasswordSettingsViewController.m */; };
+		B0DBE3E71EAAD90A00CA48DC /* SavedPasswordsController.m in Sources */ = {isa = PBXBuildFile; fileRef = B0DBE3E61EAAD90A00CA48DC /* SavedPasswordsController.m */; };
+		B0DBE3F01EAADB2E00CA48DC /* SavedPasswordsDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B0DBE3EF1EAADB2E00CA48DC /* SavedPasswordsDetailViewController.m */; };
 		B0E63E051E7E220D00E10DC9 /* LaunchImage.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B0E63E041E7E220D00E10DC9 /* LaunchImage.xcassets */; };
 /* End PBXBuildFile section */
 
@@ -120,6 +123,12 @@
 		B088D2AE1E7E1D16004286C3 /* Applcon60x60@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Applcon60x60@3x.png"; path = "Supporting Files/icons/Applcon60x60@3x.png"; sourceTree = "<group>"; };
 		B094AF2C1EA1BB9000AD5EAC /* BackButton31x31.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = BackButton31x31.png; path = "Supporting Files/icons/BackButton31x31.png"; sourceTree = "<group>"; };
 		B0D2C9D11E84EE00004C6783 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = "Supporting Files/Base.lproj/Main.storyboard"; sourceTree = "<group>"; };
+		B0DBE3E21EAAD76500CA48DC /* PasswordSettingsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PasswordSettingsViewController.h; sourceTree = "<group>"; };
+		B0DBE3E31EAAD76500CA48DC /* PasswordSettingsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PasswordSettingsViewController.m; sourceTree = "<group>"; };
+		B0DBE3E51EAAD90A00CA48DC /* SavedPasswordsController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SavedPasswordsController.h; sourceTree = "<group>"; };
+		B0DBE3E61EAAD90A00CA48DC /* SavedPasswordsController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SavedPasswordsController.m; sourceTree = "<group>"; };
+		B0DBE3EE1EAADB2E00CA48DC /* SavedPasswordsDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SavedPasswordsDetailViewController.h; sourceTree = "<group>"; };
+		B0DBE3EF1EAADB2E00CA48DC /* SavedPasswordsDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SavedPasswordsDetailViewController.m; sourceTree = "<group>"; };
 		B0E63E041E7E220D00E10DC9 /* LaunchImage.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = LaunchImage.xcassets; path = "Supporting Files/LaunchImage.xcassets"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -171,11 +180,14 @@
 		B00939AD1E3063DC002F71D0 /* Password Generator */ = {
 			isa = PBXGroup;
 			children = (
-				B00982EE1E97262A0012DAC5 /* ApplicationData */,
 				B088D23D1E7E1114004286C3 /* AppDelegate */,
-				B088D23B1E7E10BA004286C3 /* RootViewController */,
+				B00982EE1E97262A0012DAC5 /* ApplicationData */,
 				B088D23C1E7E10FD004286C3 /* DataViewcController */,
 				B088D23A1E7E10A9004286C3 /* ModelControler */,
+				B0DBE3E11EAAD76500CA48DC /* PasswordSettingsViewController */,
+				B088D23B1E7E10BA004286C3 /* RootViewController */,
+				B0DBE3E01EAAD75800CA48DC /* SavedPasswordsController */,
+				B0DBE3ED1EAADB2E00CA48DC /* SavedPasswordsDetailViewController */,
 				B088D2391E7E1090004286C3 /* Storyboards */,
 				B00939AE1E3063DC002F71D0 /* Supporting Files */,
 			);
@@ -299,6 +311,33 @@
 				B088D28D1E7E1626004286C3 /* iTunesArtwork@2x.png */,
 			);
 			name = Icons;
+			sourceTree = "<group>";
+		};
+		B0DBE3E01EAAD75800CA48DC /* SavedPasswordsController */ = {
+			isa = PBXGroup;
+			children = (
+				B0DBE3E51EAAD90A00CA48DC /* SavedPasswordsController.h */,
+				B0DBE3E61EAAD90A00CA48DC /* SavedPasswordsController.m */,
+			);
+			path = SavedPasswordsController;
+			sourceTree = "<group>";
+		};
+		B0DBE3E11EAAD76500CA48DC /* PasswordSettingsViewController */ = {
+			isa = PBXGroup;
+			children = (
+				B0DBE3E21EAAD76500CA48DC /* PasswordSettingsViewController.h */,
+				B0DBE3E31EAAD76500CA48DC /* PasswordSettingsViewController.m */,
+			);
+			path = PasswordSettingsViewController;
+			sourceTree = "<group>";
+		};
+		B0DBE3ED1EAADB2E00CA48DC /* SavedPasswordsDetailViewController */ = {
+			isa = PBXGroup;
+			children = (
+				B0DBE3EE1EAADB2E00CA48DC /* SavedPasswordsDetailViewController.h */,
+				B0DBE3EF1EAADB2E00CA48DC /* SavedPasswordsDetailViewController.m */,
+			);
+			path = SavedPasswordsDetailViewController;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -471,9 +510,12 @@
 			files = (
 				B00982F11E97262A0012DAC5 /* ApplicationData.m in Sources */,
 				B088D26A1E7E13F5004286C3 /* AppDelegate.m in Sources */,
+				B0DBE3E71EAAD90A00CA48DC /* SavedPasswordsController.m in Sources */,
 				B088D26D1E7E1411004286C3 /* RootViewController.m in Sources */,
 				B088D2731E7E1442004286C3 /* ModelController.m in Sources */,
+				B0DBE3F01EAADB2E00CA48DC /* SavedPasswordsDetailViewController.m in Sources */,
 				B088D2701E7E142A004286C3 /* DataViewController.m in Sources */,
+				B0DBE3E41EAAD76500CA48DC /* PasswordSettingsViewController.m in Sources */,
 				B088D2771E7E150B004286C3 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
