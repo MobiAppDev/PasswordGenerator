@@ -155,7 +155,7 @@
             <objects>
                 <tableViewController storyboardIdentifier="PasswordSettingsController" title="Table Of Password Settings" id="ns5-7X-GCL" userLabel="Table Of Password Settings" customClass="PasswordSettingsController" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="50" sectionHeaderHeight="28" sectionFooterHeight="28" id="sz9-BT-9IW" userLabel="Table View Of Password Settings">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="94" width="375" height="573"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
@@ -229,6 +229,11 @@
                                 <items>
                                     <navigationItem title="Password Setting Detail View" prompt="Password Setting Detail View" id="Eji-Fl-0x8">
                                         <barButtonItem key="backBarButtonItem" title="Back" id="yUk-Iu-OVL"/>
+                                        <barButtonItem key="leftBarButtonItem" systemItem="done" id="bcZ-n0-sfd">
+                                            <connections>
+                                                <segue destination="RwS-Xb-BMN" kind="showDetail" action="showViewController:sender:" id="aqG-Ml-IL8"/>
+                                            </connections>
+                                        </barButtonItem>
                                     </navigationItem>
                                 </items>
                             </navigationBar>
@@ -259,7 +264,7 @@
                                         <barButtonItem key="backBarButtonItem" systemItem="done" id="awE-5a-XSX"/>
                                         <barButtonItem key="leftBarButtonItem" style="done" systemItem="done" id="cyo-Jc-pOe" userLabel="Return to Password List">
                                             <connections>
-                                                <segue destination="lgI-4z-UfU" kind="showDetail" id="yQL-CO-uue"/>
+                                                <segue destination="cku-oS-qoP" kind="showDetail" id="2Xw-NF-gRE"/>
                                             </connections>
                                         </barButtonItem>
                                     </navigationItem>
@@ -283,7 +288,7 @@
             <objects>
                 <tableViewController storyboardIdentifier="SavedPasswordsController" title="Table Of Saved Passwords" id="lgI-4z-UfU" userLabel="Table Of Saved Passwords" customClass="SavedPasswordsController" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="jVz-ey-vjk" userLabel="Table View Of Passwords">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="94" width="375" height="573"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
@@ -362,6 +367,7 @@
             <objects>
                 <navigationController storyboardIdentifier="nav_ToPasswordSettings" title="Navigator To Password Settings" automaticallyAdjustsScrollViewInsets="NO" id="RwS-Xb-BMN" userLabel="Navigator to Password Settings" sceneMemberID="viewController">
                     <toolbarItems/>
+                    <navigationItem key="navigationItem" id="DBf-MS-XjW"/>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" translucent="NO"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" translucent="NO" shadowImage="BackButton31x31.png" backIndicatorImage="BackButton31x31.png" backIndicatorTransitionMaskImage="BackButton31x31.png" id="bk4-Tx-PQW" userLabel="Navigation Bar To Password Settings">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
@@ -381,7 +387,8 @@
         <image name="BackButton31x31.png" width="31" height="31"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="sJf-8q-jpJ"/>
-        <segue reference="yQL-CO-uue"/>
+        <segue reference="2Xw-NF-gRE"/>
+        <segue reference="oUB-bA-zx1"/>
+        <segue reference="aqG-Ml-IL8"/>
     </inferredMetricsTieBreakers>
 </document>
