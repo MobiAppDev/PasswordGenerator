@@ -163,18 +163,18 @@
                                 <rect key="frame" x="0.0" y="28" width="375" height="50"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="dXF-T9-bKf" id="Dnd-G7-fzb">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="49.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="AJX-82-5Vl">
-                                            <rect key="frame" x="15" y="14" width="34" height="21"/>
+                                            <rect key="frame" x="15" y="15" width="33.5" height="20.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Detail" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="6r0-2k-7pE">
-                                            <rect key="frame" x="316" y="14" width="44" height="21"/>
+                                            <rect key="frame" x="316" y="15" width="44" height="20.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <nil key="textColor"/>
@@ -252,16 +252,12 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" restorationIdentifier="btn_ReturnToList" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yyi-gI-AJv">
-                                <rect key="frame" x="14" y="600" width="342" height="50"/>
-                                <accessibility key="accessibilityConfiguration" hint="Select this button to return to the previous list" identifier="btn_ReturnToList" label="Return to List"/>
-                                <state key="normal" title="Button"/>
-                            </button>
-                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5W7-HR-FaO">
+                            <navigationBar contentMode="scaleToFill" backIndicatorImage="BackButton31x31.png" translatesAutoresizingMaskIntoConstraints="NO" id="5W7-HR-FaO">
                                 <rect key="frame" x="1" y="-10" width="375" height="74"/>
                                 <items>
                                     <navigationItem title="Password Detail View" prompt="Password Detail View" id="hkq-ud-9oA" userLabel="Password Detail View">
                                         <barButtonItem key="backBarButtonItem" title="Back" id="awE-5a-XSX"/>
+                                        <barButtonItem key="leftBarButtonItem" systemItem="done" id="cyo-Jc-pOe" userLabel="Return to Password List"/>
                                     </navigationItem>
                                 </items>
                             </navigationBar>
@@ -269,10 +265,6 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="5W7-HR-FaO" firstAttribute="top" secondItem="Rfa-4r-4yc" secondAttribute="topMargin" constant="-10" id="Bv4-Bv-YCh"/>
-                            <constraint firstItem="yyi-gI-AJv" firstAttribute="top" secondItem="CFv-ck-rvn" secondAttribute="bottom" constant="580" id="Q8L-dx-Hgf"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="yyi-gI-AJv" secondAttribute="trailing" constant="3" id="QE3-lh-Laq"/>
-                            <constraint firstItem="7Dl-kY-CB1" firstAttribute="top" secondItem="yyi-gI-AJv" secondAttribute="bottom" constant="17" id="S0X-2d-9JE"/>
-                            <constraint firstItem="yyi-gI-AJv" firstAttribute="leading" secondItem="Rfa-4r-4yc" secondAttribute="leadingMargin" constant="-2" id="ak6-6s-PIP"/>
                             <constraint firstItem="5W7-HR-FaO" firstAttribute="leading" secondItem="Rfa-4r-4yc" secondAttribute="leadingMargin" constant="-15" id="bEf-Un-KCP"/>
                             <constraint firstAttribute="trailingMargin" secondItem="5W7-HR-FaO" secondAttribute="trailing" constant="-17" id="cpu-7g-qGe"/>
                         </constraints>
@@ -295,18 +287,18 @@
                                 <rect key="frame" x="0.0" y="28" width="375" height="50"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="7ii-wD-HOr" id="9Bl-Kc-d2N">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="49.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Wnh-Bb-Co2">
-                                            <rect key="frame" x="15" y="14" width="34" height="21"/>
+                                            <rect key="frame" x="15" y="15" width="33.5" height="20.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Detail" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="8Y7-4k-eL1">
-                                            <rect key="frame" x="316" y="14" width="44" height="21"/>
+                                            <rect key="frame" x="316" y="15" width="44" height="20.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <nil key="textColor"/>
