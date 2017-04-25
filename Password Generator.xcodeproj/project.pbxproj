@@ -10,6 +10,7 @@
 		B00939CF1E3063DC002F71D0 /* Password_GeneratorTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B00939CE1E3063DC002F71D0 /* Password_GeneratorTests.m */; };
 		B00939DA1E3063DC002F71D0 /* Password_GeneratorUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = B00939D91E3063DC002F71D0 /* Password_GeneratorUITests.m */; };
 		B00982F11E97262A0012DAC5 /* ApplicationData.m in Sources */ = {isa = PBXBuildFile; fileRef = B00982F01E97262A0012DAC5 /* ApplicationData.m */; };
+		B03F593B1EAFF8FF00A138E0 /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B03F59391EAFF8FF00A138E0 /* Model.xcdatamodeld */; };
 		B0416EB91E7F4AF1004B9CDF /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B0416EB71E7F4AF1004B9CDF /* Info.plist */; };
 		B0416EBA1E7F4AF1004B9CDF /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B0416EB71E7F4AF1004B9CDF /* Info.plist */; };
 		B0416EBC1E7F4B65004B9CDF /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B0416EBB1E7F4B65004B9CDF /* Default-568h@2x.png */; };
@@ -84,6 +85,7 @@
 		B00939DB1E3063DC002F71D0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B00982EF1E97262A0012DAC5 /* ApplicationData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ApplicationData.h; sourceTree = "<group>"; };
 		B00982F01E97262A0012DAC5 /* ApplicationData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ApplicationData.m; sourceTree = "<group>"; };
+		B03F593A1EAFF8FF00A138E0 /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
 		B0416EB71E7F4AF1004B9CDF /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = "Supporting Files/Info.plist"; sourceTree = "<group>"; };
 		B0416EBB1E7F4B65004B9CDF /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default-568h@2x.png"; path = "Supporting Files/icons/Default-568h@2x.png"; sourceTree = "<group>"; };
 		B088D2681E7E13F5004286C3 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = AppDelegate/AppDelegate.h; sourceTree = "<group>"; };
@@ -242,6 +244,7 @@
 			children = (
 				B0D2C9D01E84EE00004C6783 /* Main.storyboard */,
 				B00939C21E3063DC002F71D0 /* LaunchScreen.storyboard */,
+				B03F59391EAFF8FF00A138E0 /* Model.xcdatamodeld */,
 			);
 			name = Storyboards;
 			sourceTree = "<group>";
@@ -530,6 +533,7 @@
 				B088D2731E7E1442004286C3 /* ModelController.m in Sources */,
 				B0DBE3F01EAADB2E00CA48DC /* SavedPasswordsDetailViewController.m in Sources */,
 				B088D2701E7E142A004286C3 /* DataViewController.m in Sources */,
+				B03F593B1EAFF8FF00A138E0 /* Model.xcdatamodeld in Sources */,
 				B088D2771E7E150B004286C3 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -792,6 +796,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		B03F59391EAFF8FF00A138E0 /* Model.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				B03F593A1EAFF8FF00A138E0 /* Model.xcdatamodel */,
+			);
+			currentVersion = B03F593A1EAFF8FF00A138E0 /* Model.xcdatamodel */;
+			path = Model.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = B00939A31E3063DC002F71D0 /* Project object */;
 }
