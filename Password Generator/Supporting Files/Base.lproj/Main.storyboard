@@ -223,9 +223,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="QCB-Pe-Drg">
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QCB-Pe-Drg">
                                 <rect key="frame" x="0.0" y="-2" width="375" height="74"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                                 <items>
                                     <navigationItem title="Password Setting Detail View" prompt="Password Setting Detail View" id="Eji-Fl-0x8">
                                         <barButtonItem key="backBarButtonItem" title="Back" id="yUk-Iu-OVL"/>
@@ -237,13 +236,44 @@
                                     </navigationItem>
                                 </items>
                             </navigationBar>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="savedApplicationNameTextField" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Type Application Name Here" borderStyle="roundedRect" placeholder="Application Name Goes Here" textAlignment="natural" clearsOnBeginEditing="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="JXq-xg-cMb">
+                                <rect key="frame" x="16" y="133" width="343" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" restorationIdentifier="passwordOnDetailPage" text="Put Password Here" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xRI-N2-0sl">
+                                <rect key="frame" x="16" y="89" width="343" height="36"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="36" id="917-Gr-UzQ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="xRI-N2-0sl" firstAttribute="top" secondItem="QCB-Pe-Drg" secondAttribute="bottom" constant="17" id="88V-xp-pdk"/>
+                            <constraint firstItem="QCB-Pe-Drg" firstAttribute="centerX" secondItem="xRI-N2-0sl" secondAttribute="centerX" id="I2U-Jj-g3m"/>
+                            <constraint firstItem="QCB-Pe-Drg" firstAttribute="leading" secondItem="hpo-TF-APs" secondAttribute="leading" id="KNk-cM-525"/>
+                            <constraint firstItem="XmR-YX-pM0" firstAttribute="top" secondItem="JXq-xg-cMb" secondAttribute="bottom" constant="504" id="T1r-zx-zPm"/>
+                            <constraint firstItem="JXq-xg-cMb" firstAttribute="top" secondItem="xRI-N2-0sl" secondAttribute="bottom" constant="8" symbolic="YES" id="XQZ-E2-SA1"/>
+                            <constraint firstItem="xRI-N2-0sl" firstAttribute="leading" secondItem="JXq-xg-cMb" secondAttribute="leading" id="ij0-fv-Ydb"/>
+                            <constraint firstItem="xRI-N2-0sl" firstAttribute="trailing" secondItem="JXq-xg-cMb" secondAttribute="trailing" id="nYt-qz-NQW"/>
+                            <constraint firstAttribute="trailing" secondItem="QCB-Pe-Drg" secondAttribute="trailing" id="wvI-yX-hrX"/>
+                            <constraint firstItem="xRI-N2-0sl" firstAttribute="leading" secondItem="hpo-TF-APs" secondAttribute="leadingMargin" id="yAz-sQ-1Uz"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="passwordOnDetailPage" destination="xRI-N2-0sl" id="Btd-mU-uIA"/>
+                        <outlet property="savedApplicationName" destination="JXq-xg-cMb" id="CmD-SJ-8Ed"/>
+                        <outlet property="savedApplicationNameTextField" destination="JXq-xg-cMb" id="7ZR-dp-Wgh"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="GmS-fW-SvE" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2847" y="-243"/>
+            <point key="canvasLocation" x="2845.5999999999999" y="-243.32833583208398"/>
         </scene>
         <!--Detail View Controller Of Saved Passwords-->
         <scene sceneID="L6E-TW-1Jf">
@@ -387,8 +417,8 @@
         <image name="BackButton31x31.png" width="31" height="31"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="2Xw-NF-gRE"/>
-        <segue reference="oUB-bA-zx1"/>
         <segue reference="aqG-Ml-IL8"/>
+        <segue reference="oUB-bA-zx1"/>
+        <segue reference="xzj-Og-gfA"/>
     </inferredMetricsTieBreakers>
 </document>
