@@ -23,7 +23,7 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
 
-//  savedApplicationNameTextField.delegate = self;
+self.savedApplicationNameTextField.delegate = self;
 
 }
 
@@ -32,6 +32,7 @@
     // Dispose of any resources that can be recreated.
 }
 
+/*
 -(BOOL)textFieldShouldReturn:(UITextField *)savedApplicationNameTextField //textField
 {
   NSLog(@"Return Key Pressed");
@@ -47,7 +48,7 @@ resignFirstResponder];
 //    [self.delegate touchesBegan:touches withEvent:event inView:self];
 //self.view.endEditing(true);
 }
-
+*/
 
 /*
 // For the textView

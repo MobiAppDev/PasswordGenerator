@@ -267,7 +267,6 @@
                     </view>
                     <connections>
                         <outlet property="passwordOnDetailPage" destination="xRI-N2-0sl" id="Btd-mU-uIA"/>
-                        <outlet property="savedApplicationName" destination="JXq-xg-cMb" id="CmD-SJ-8Ed"/>
                         <outlet property="savedApplicationNameTextField" destination="JXq-xg-cMb" id="7ZR-dp-Wgh"/>
                     </connections>
                 </viewController>
