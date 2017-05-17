@@ -17,12 +17,27 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+//[self. becomeFirstResponder];
+[self.view endEditing:YES];
+
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
+
+/*
+textView(textView: UITextView, shouldChangeTextInRange range: NSRange, replacementText text: String) -> Bool
+{
+  if text == "\n"
+  {
+    textView.resignFirstResponder()
+    return false
+  }
+  return true
+}
+*/
 
 /*
 #pragma mark - Navigation

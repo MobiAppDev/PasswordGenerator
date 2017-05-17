@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="703-4V-yAM">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="703-4V-yAM">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -223,8 +223,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QCB-Pe-Drg">
-                                <rect key="frame" x="0.0" y="-2" width="375" height="74"/>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QCB-Pe-Drg" userLabel="navbarPasswordDetailView">
+                                <rect key="frame" x="0.0" y="20" width="375" height="74"/>
                                 <items>
                                     <navigationItem title="Password Setting Detail View" prompt="Password Setting Detail View" id="Eji-Fl-0x8">
                                         <barButtonItem key="backBarButtonItem" title="Back" id="yUk-Iu-OVL"/>
@@ -236,38 +236,40 @@
                                     </navigationItem>
                                 </items>
                             </navigationBar>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="savedApplicationNameTextField" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Type Application Name Here" borderStyle="roundedRect" placeholder="Application Name Goes Here" textAlignment="natural" clearsOnBeginEditing="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="JXq-xg-cMb">
-                                <rect key="frame" x="16" y="133" width="343" height="30"/>
-                                <nil key="textColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" restorationIdentifier="passwordOnDetailPage" text="Put Password Here" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xRI-N2-0sl">
-                                <rect key="frame" x="16" y="89" width="343" height="36"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="36" id="917-Gr-UzQ"/>
-                                </constraints>
+                                <rect key="frame" x="16" y="138" width="343" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="savedApplicationNameTextField" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Type Application Name Here" borderStyle="roundedRect" placeholder="Application Name Goes Here" textAlignment="natural" clearsOnBeginEditing="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="JXq-xg-cMb">
+                                <rect key="frame" x="16" y="162" width="343" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <action selector="editingDidEndSavedApplicaitonNameTextField:" destination="0VI-U9-wTz" eventType="editingDidBegin" id="h4v-sn-hAs"/>
+                                    <action selector="touchDownInsideSavedApplicationNameTextField:" destination="0VI-U9-wTz" eventType="editingDidEnd" id="ldP-HK-GGq"/>
+                                    <action selector="touchUpInsideSavedApplicationNameTextField:" destination="0VI-U9-wTz" eventType="touchUpInside" id="WgH-37-HWq"/>
+                                </connections>
+                            </textField>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="xRI-N2-0sl" firstAttribute="top" secondItem="QCB-Pe-Drg" secondAttribute="bottom" constant="17" id="88V-xp-pdk"/>
-                            <constraint firstItem="QCB-Pe-Drg" firstAttribute="centerX" secondItem="xRI-N2-0sl" secondAttribute="centerX" id="I2U-Jj-g3m"/>
-                            <constraint firstItem="QCB-Pe-Drg" firstAttribute="leading" secondItem="hpo-TF-APs" secondAttribute="leading" id="KNk-cM-525"/>
-                            <constraint firstItem="XmR-YX-pM0" firstAttribute="top" secondItem="JXq-xg-cMb" secondAttribute="bottom" constant="504" id="T1r-zx-zPm"/>
-                            <constraint firstItem="JXq-xg-cMb" firstAttribute="top" secondItem="xRI-N2-0sl" secondAttribute="bottom" constant="8" symbolic="YES" id="XQZ-E2-SA1"/>
-                            <constraint firstItem="xRI-N2-0sl" firstAttribute="leading" secondItem="JXq-xg-cMb" secondAttribute="leading" id="ij0-fv-Ydb"/>
-                            <constraint firstItem="xRI-N2-0sl" firstAttribute="trailing" secondItem="JXq-xg-cMb" secondAttribute="trailing" id="nYt-qz-NQW"/>
-                            <constraint firstAttribute="trailing" secondItem="QCB-Pe-Drg" secondAttribute="trailing" id="wvI-yX-hrX"/>
-                            <constraint firstItem="xRI-N2-0sl" firstAttribute="leading" secondItem="hpo-TF-APs" secondAttribute="leadingMargin" id="yAz-sQ-1Uz"/>
+                            <constraint firstItem="JXq-xg-cMb" firstAttribute="trailing" secondItem="hpo-TF-APs" secondAttribute="trailingMargin" id="Kr0-e1-Ppj"/>
+                            <constraint firstItem="xRI-N2-0sl" firstAttribute="top" secondItem="QCB-Pe-Drg" secondAttribute="bottom" constant="44" id="PDi-th-w8n"/>
+                            <constraint firstItem="JXq-xg-cMb" firstAttribute="leading" secondItem="hpo-TF-APs" secondAttribute="leadingMargin" id="WHH-AF-kfJ"/>
+                            <constraint firstItem="xRI-N2-0sl" firstAttribute="leading" secondItem="hpo-TF-APs" secondAttribute="leadingMargin" id="cwO-Rz-u8s"/>
+                            <constraint firstItem="xRI-N2-0sl" firstAttribute="trailing" secondItem="hpo-TF-APs" secondAttribute="trailingMargin" id="fvm-jo-pSa"/>
+                            <constraint firstItem="JXq-xg-cMb" firstAttribute="top" secondItem="xRI-N2-0sl" secondAttribute="bottom" constant="3" id="jVi-YF-gbw"/>
+                            <constraint firstAttribute="trailing" secondItem="QCB-Pe-Drg" secondAttribute="trailing" id="s8u-uv-3pu"/>
+                            <constraint firstItem="QCB-Pe-Drg" firstAttribute="top" secondItem="V6M-UF-SP0" secondAttribute="bottom" id="y4s-5f-mET"/>
+                            <constraint firstItem="QCB-Pe-Drg" firstAttribute="leading" secondItem="hpo-TF-APs" secondAttribute="leading" id="zph-Vz-BA4"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="passwordOnDetailPage" destination="xRI-N2-0sl" id="Btd-mU-uIA"/>
-                        <outlet property="savedApplicationNameTextField" destination="JXq-xg-cMb" id="7ZR-dp-Wgh"/>
+                        <outlet property="savedApplicationNameTextField" destination="JXq-xg-cMb" id="FJK-Gh-4Jm"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="GmS-fW-SvE" userLabel="First Responder" sceneMemberID="firstResponder"/>
