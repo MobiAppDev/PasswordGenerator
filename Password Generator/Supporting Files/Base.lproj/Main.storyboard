@@ -249,6 +249,9 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                                 <connections>
+                                    <action selector="editingDidEndSavedApplicaitonNameTextField:" destination="0VI-U9-wTz" eventType="editingDidEnd" id="MBO-NB-faC"/>
+                                    <action selector="touchDownInsideSavedApplicationNameTextField:" destination="0VI-U9-wTz" eventType="touchDown" id="4x7-iO-XxS"/>
+                                    <action selector="touchUpInsideSavedApplicationNameTextField:" destination="0VI-U9-wTz" eventType="touchUpInside" id="6Dl-bj-SZD"/>
                                     <outlet property="delegate" destination="hpo-TF-APs" id="wIT-Xw-v2w"/>
                                 </connections>
                             </textField>

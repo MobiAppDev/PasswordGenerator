@@ -21,7 +21,7 @@
 
 - (IBAction)editingDidEndSavedApplicaitonNameTextField:(UITextField *)sender;
 
-//- (IBAction)addSavedApplicationNameTextField:(UITextField *)sender;
+- (IBAction)addSavedApplicationNameTextField:(UITextField *)sender;
 
 @end
 
@@ -30,9 +30,11 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
+    // a delegate tells return key to remove keyboard
+    //self.savedApplicationNameTextField.delegate = self;
 
-//self.savedApplicationNameTextField.delegate = self;
-//[self.savedApplicationNameTextField becomeFirstResponder];
+    //displays keyboard immediately
+    //[self.savedApplicationNameTextField becomeFirstResponder];
 
 }
 
@@ -43,26 +45,35 @@
 
 - (void)viewWillAppear:(BOOL)animated {
   [super viewWillAppear:animated];
-//  [_savedApplicationNameTextField becomeFirstResponder];
+  //assigning the delegate allows more controled functions
+
+  // a delegate tells the return key to clear keyboard
+  self.savedApplicationNameTextField.delegate = self;
+
+  //displays keyboard immediately
+  [self.savedApplicationNameTextField becomeFirstResponder];
+
 }
 
 
 -(BOOL)textFieldShouldReturn:(UITextField *)savedApplicationNameTextField
 {
   NSLog(@"Return Key Pressed");
-  
-//[self.savedApplicationNameTextField resignFirstResponder];
 
-//[_savedApplicationNameTextField resignFirstResponder];
-  return YES;
+  // hide the keyboard when return is pressed
+  [self.savedApplicationNameTextField resignFirstResponder];
+
+// What does YES or NO do?  I dont' see a difference.
 //  return NO;
+  return YES;
 }
 
 -(void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event
 {
-NSLog(@"touchBegan:withEvents");
+  NSLog(@"touchBegan:withEvents");
 
-//[self.savedApplicationNameTextField resignFirstResponder];
+  // remove keyboard
+  [self.savedApplicationNameTextField resignFirstResponder];
 
 //  if (self.delegate && [self.delegate respondsToSelector:@selector(touchesBegan:withEventinView)]) {
 //    [self.delegate touchesBegan:touches withEvent:event inView:self];
@@ -107,12 +118,11 @@ NSLog(@"touchDownInsideSavedApplicationNameTextField");
 NSLog(@"editingDidEndSavedApplicationNameTextField");
 }
 
-/*
 - (IBAction)addSavedApplicationNameTextField:(UITextField *)sender
 {
 NSLog(@"addSavedApplicationNameTextField");
 }
-*/
+
 
 
 @end
