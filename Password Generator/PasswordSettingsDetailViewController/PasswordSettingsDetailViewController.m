@@ -21,6 +21,7 @@
 
 - (IBAction)editingDidEndSavedApplicaitonNameTextField:(UITextField *)sender;
 
+//- (IBAction)addSavedApplicationNameTextField:(UITextField *)sender;
 
 @end
 
@@ -30,7 +31,7 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
 
-self.savedApplicationNameTextField.delegate = self;
+//self.savedApplicationNameTextField.delegate = self;
 //[self.savedApplicationNameTextField becomeFirstResponder];
 
 }
@@ -40,29 +41,34 @@ self.savedApplicationNameTextField.delegate = self;
     // Dispose of any resources that can be recreated.
 }
 
+- (void)viewWillAppear:(BOOL)animated {
+  [super viewWillAppear:animated];
+//  [_savedApplicationNameTextField becomeFirstResponder];
+}
+
 
 -(BOOL)textFieldShouldReturn:(UITextField *)savedApplicationNameTextField
 {
   NSLog(@"Return Key Pressed");
   
-[self.savedApplicationNameTextField resignFirstResponder];
+//[self.savedApplicationNameTextField resignFirstResponder];
 
-//[_savedApplicationNameTextField
-// resignFirstResponder];
-//  return YES;
-  return NO;
+//[_savedApplicationNameTextField resignFirstResponder];
+  return YES;
+//  return NO;
 }
 
 -(void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event
 {
 NSLog(@"touchBegan:withEvents");
 
-[self.savedApplicationNameTextField resignFirstResponder];
+//[self.savedApplicationNameTextField resignFirstResponder];
 
 //  if (self.delegate && [self.delegate respondsToSelector:@selector(touchesBegan:withEventinView)]) {
 //    [self.delegate touchesBegan:touches withEvent:event inView:self];
 //self.view.endEditing(true);
 }
+
 /*
 // For the textView
 - (BOOL)textView:(UITextView *)textView shouldChangeTextInRange:(NSRange)range replacementText:(NSString *)text {
@@ -88,7 +94,7 @@ NSLog(@"touchBegan:withEvents");
 - (IBAction)touchUpInsideSavedApplicationNameTextField:(UITextField *)sender 
 {
 NSLog(@"touchUpInsideSavedApplicationNameTextField");
-[self.savedApplicationNameTextField becomeFirstResponder];
+//[self.savedApplicationNameTextField becomeFirstResponder];
 }
 
 - (IBAction)touchDownInsideSavedApplicationNameTextField:(UITextField *)sender 
@@ -101,8 +107,12 @@ NSLog(@"touchDownInsideSavedApplicationNameTextField");
 NSLog(@"editingDidEndSavedApplicationNameTextField");
 }
 
+/*
 - (IBAction)addSavedApplicationNameTextField:(UITextField *)sender
 {
 NSLog(@"addSavedApplicationNameTextField");
 }
+*/
+
+
 @end

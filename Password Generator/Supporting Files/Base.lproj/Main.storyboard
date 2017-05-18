@@ -242,15 +242,14 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="savedApplicationNameTextField" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Type Application Name Here" borderStyle="roundedRect" placeholder="Application Name Goes Here" textAlignment="natural" clearsOnBeginEditing="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="JXq-xg-cMb">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="savedApplicationNameTextField" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Type Application Name Here" borderStyle="roundedRect" placeholder="Application Name Goes Here" textAlignment="natural" clearsOnBeginEditing="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="JXq-xg-cMb" userLabel="savedApplicationNameTextView">
                                 <rect key="frame" x="16" y="162" width="343" height="30"/>
+                                <accessibility key="accessibilityConfiguration" hint="Enter Application Name to associate Password with" identifier="savedApplicationNameTextField" label="Application Name"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                                 <connections>
-                                    <action selector="editingDidEndSavedApplicaitonNameTextField:" destination="0VI-U9-wTz" eventType="editingDidBegin" id="h4v-sn-hAs"/>
-                                    <action selector="touchDownInsideSavedApplicationNameTextField:" destination="0VI-U9-wTz" eventType="editingDidEnd" id="ldP-HK-GGq"/>
-                                    <action selector="touchUpInsideSavedApplicationNameTextField:" destination="0VI-U9-wTz" eventType="touchUpInside" id="WgH-37-HWq"/>
+                                    <outlet property="delegate" destination="hpo-TF-APs" id="wIT-Xw-v2w"/>
                                 </connections>
                             </textField>
                         </subviews>

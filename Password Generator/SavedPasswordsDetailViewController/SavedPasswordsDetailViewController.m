@@ -17,9 +17,10 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-//[self. becomeFirstResponder];
-[self.view endEditing:YES];
-
+//[self becomeFirstResponder];
+//[self.view endEditing:YES];
+//[self.messageInputView.textView becomeFirstResponder];
+//[self.inputView becomeFirstResponder];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -28,7 +29,14 @@
 }
 
 /*
-textView(textView: UITextView, shouldChangeTextInRange range: NSRange, replacementText text: String) -> Bool
+- (BOOL)textFieldShouldBeginEditing:(UITextField *)textField
+{
+  return true;
+}
+*/
+
+/*
+- (BOOL)textView(textView: UITextView, shouldChangeTextInRange range: NSRange, replacementText text: String) -> Bool
 {
   if text == "\n"
   {
