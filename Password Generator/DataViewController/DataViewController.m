@@ -32,46 +32,55 @@ _displayPassword.titleLabel.text = @"PkYm8R$dz.*FGa";
 {
   [super viewDidLoad];
   // Do any additional setup after loading the view, typically from a nib.
+  NSLog(@"DataViewController Created");
 
-  NSString *valueToSave = @"Wayne Hill";
-  [[NSUserDefaults standardUserDefaults] setObject:valueToSave forKey:@"userName"];
-  [[NSUserDefaults standardUserDefaults] synchronize];
+//  NSString *valueToSave = @"Wayne Hill";
+//  [[NSUserDefaults standardUserDefaults] setObject:valueToSave forKey:@"userName"];
+  
+//  NSString *preferenceName = @"My Preferences";
+//[[NSUserDefaults standardUserDefaults] stringForKey:@"preferenceName"];
+//  NSLog(@"%@",preferenceName);
 
-  NSString *userName = [[NSUserDefaults standardUserDefaults] stringForKey:@"userName"];
-  NSLog(@"%@",userName);
+//  [[NSUserDefaults standardUserDefaults] synchronize];
 
-  NSString *savedValue = [[NSUserDefaults standardUserDefaults]
-stringForKey:@"preferenceName"];
-  NSLog(@"%@",savedValue);
+//  NSString *userName = [[NSUserDefaults standardUserDefaults] stringForKey:@"userName"];
+//  NSLog(@"%@",userName);
+
+//  NSString *savedValue = [[NSUserDefaults standardUserDefaults] stringForKey:@"preferenceName"];
+//  NSLog(@"%@",savedValue);
 
   //Setting Preferences
-  NSUserDefaults *prefs = [NSUserDefaults standardUserDefaults];
+//  NSUserDefaults *prefs = [NSUserDefaults standardUserDefaults];
   
   // saving an NSString
-  [prefs setObject:@"TextToSave" forKey:@"keyToLookupString"];
+//  [prefs setObject:@"TextToSave" forKey:@"keyToLookupString"];
   // saving an NSInteger
-  [prefs setInteger:42 forKey:@"integerKey"];
+//  [prefs setInteger:42 forKey:@"integerKey"];
   // saving a Double
-  [prefs setDouble:3.1415 forKey:@"doubleKey"];
+//  [prefs setDouble:3.1415 forKey:@"doubleKey"];
   // saving a Float
-  [prefs setFloat:1.2345678 forKey:@"floatKey"];
+//  [prefs setFloat:1.2345678 forKey:@"floatKey"];
   
   // To synchronize prefs
-  [prefs synchronize];
+//  [prefs synchronize];
 //Retreive Preferences
 //  NSUserDefaults *prefs = [NSUserDefaults standardUserDefaults];
   
-  // getting an NSString
-  NSString *myString = [prefs stringForKey:@"keyToLookupString"];
-  NSLog(@"%@",myString);
+  // getting my NSString back
+//  NSString *myString = [prefs stringForKey:@"keyToLookupString"];
+//  NSLog(@"%@",myString);
 
-  // getting an NSInteger
-  NSInteger myInt = [prefs integerForKey:@"integerKey"];
-  NSLog(@"%ld",(long)myInt);
+  // getting my NSInteger back
+//  NSInteger myInt = [prefs integerForKey:@"integerKey"];
+//  NSLog(@"%ld",(long)myInt);
 
-  // getting an Float
-  float myFloat = [prefs floatForKey:@"floatKey"];
-  NSLog(@"%f",myFloat);
+    // getting my Double back
+//  double myDouble = [prefs doubleForKey:@"doubleKey"];
+//  NSLog(@"%f",myDouble);
+
+  // getting my Float back
+//  float myFloat = [prefs floatForKey:@"floatKey"];
+//  NSLog(@"%f",myFloat);
 
 }
 

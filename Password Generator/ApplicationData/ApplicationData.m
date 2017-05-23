@@ -21,7 +21,7 @@
   self = [super init];
   if (self) 
   {
-    NSLog(@"\nApplication Data Created");
+    NSLog(@"\nApplicationData Created");
       // Create the password.
   }
   return self;

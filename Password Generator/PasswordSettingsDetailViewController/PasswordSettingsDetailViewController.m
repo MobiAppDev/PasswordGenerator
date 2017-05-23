@@ -29,6 +29,8 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+
+  NSLog(@"PasswordSettingsDetailViewController Created");
     // Do any additional setup after loading the view from its nib.
     // a delegate tells return key to remove keyboard
     //self.savedApplicationNameTextField.delegate = self;

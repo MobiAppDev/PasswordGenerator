@@ -10,7 +10,7 @@
 #import "DataViewController.h"
 
 /*
- A controller object that manages a simple model -- a collection of month names.
+ A controller object that manages a simple model -- a collection of passwords.
  
  The controller serves as the data source for the page view controller; it therefore implements pageViewController:viewControllerBeforeViewController: and pageViewController:viewControllerAfterViewController:.
  It also implements a custom method, viewControllerAtIndex: which is useful in the implementation of the data source methods, and in the initial configuration of the application.
@@ -22,16 +22,27 @@
 @interface ModelController ()
 
 @property (readonly, strong, nonatomic) NSArray *pageData;
+@property (readonly, strong, nonatomic) NSString *pageUser;
+
 @end
 
 @implementation ModelController
 
 - (instancetype)init {
     self = [super init];
+  NSLog(@"ModelController Created");
+
+
     if (self) {
     // Create the data model.
+//      NSString *userName = [[NSUserDefaults standardUserDefaults] stringForKey:@"userName"];
+//      NSLog(@"%@",userName);
+//      _pageUser = userName;
+
     NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
+//      _pageData = [[dateFormatter shortMonthSymbols] copy];
     _pageData = [[dateFormatter monthSymbols] copy];
+
     }
     return self;
 }

@@ -16,6 +16,8 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+
+  NSLog(@"SavedPasswordDetailViewController Created");
     // Do any additional setup after loading the view.
 //[self becomeFirstResponder];
 //[self.view endEditing:YES];
