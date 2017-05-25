@@ -10,8 +10,8 @@
 
 @interface DataViewController ()
 
-@property (weak, nonatomic) IBOutlet UIButton *displayPassword;
 
+@property (weak, nonatomic) IBOutlet UIButton *displayPassword;
 @property (weak, nonatomic) NSString *aNewPasswordString;
 
 @end
@@ -24,8 +24,18 @@
 {
   NSLog(@"\'Generate Password\' button touched up inside.");
 
-_displayPassword.titleLabel.text = @"PkYm8R$dz.*FGa";
+  // create a new password array
+  NSMutableArray *password = [[NSMutableArray alloc]init];
+  // add a password to array
+  [password addObject:@"password1"];
 
+// verify that a password was created
+  NSString *tmp = [password objectAtIndex:0];
+  NSLog(@"%@", tmp);
+
+// display the password on screen
+_displayPassword.titleLabel.text = [password objectAtIndex:0];
+//@"PkYm8R$dz.*FGa";
 }
 
 - (void)viewDidLoad 
@@ -33,6 +43,8 @@ _displayPassword.titleLabel.text = @"PkYm8R$dz.*FGa";
   [super viewDidLoad];
   // Do any additional setup after loading the view, typically from a nib.
   NSLog(@"DataViewController Created");
+
+
 
 //  NSString *valueToSave = @"Wayne Hill";
 //  [[NSUserDefaults standardUserDefaults] setObject:valueToSave forKey:@"userName"];
