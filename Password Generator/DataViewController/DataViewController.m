@@ -44,55 +44,49 @@ _displayPassword.titleLabel.text = [password objectAtIndex:0];
   // Do any additional setup after loading the view, typically from a nib.
   NSLog(@"DataViewController Created");
 
-
-
-//  NSString *valueToSave = @"Wayne Hill";
-//  [[NSUserDefaults standardUserDefaults] setObject:valueToSave forKey:@"userName"];
-  
-//  NSString *preferenceName = @"My Preferences";
-//[[NSUserDefaults standardUserDefaults] stringForKey:@"preferenceName"];
-//  NSLog(@"%@",preferenceName);
-
-//  [[NSUserDefaults standardUserDefaults] synchronize];
-
-//  NSString *userName = [[NSUserDefaults standardUserDefaults] stringForKey:@"userName"];
-//  NSLog(@"%@",userName);
-
-//  NSString *savedValue = [[NSUserDefaults standardUserDefaults] stringForKey:@"preferenceName"];
-//  NSLog(@"%@",savedValue);
-
-  //Setting Preferences
-//  NSUserDefaults *prefs = [NSUserDefaults standardUserDefaults];
-  
-  // saving an NSString
-//  [prefs setObject:@"TextToSave" forKey:@"keyToLookupString"];
-  // saving an NSInteger
-//  [prefs setInteger:42 forKey:@"integerKey"];
-  // saving a Double
-//  [prefs setDouble:3.1415 forKey:@"doubleKey"];
-  // saving a Float
-//  [prefs setFloat:1.2345678 forKey:@"floatKey"];
-  
-  // To synchronize prefs
+  // Create Application Preferences
+  NSUserDefaults *prefs = [NSUserDefaults standardUserDefaults];
+  // Set an NSString in Preferences
+  [prefs setObject:@"TextToSave" forKey:@"stringKey"];
+  // Set an NSInteger in Preferences
+  [prefs setInteger:42 forKey:@"integerKey"];
+  // Set a Double in Preferences
+  [prefs setDouble:3.1415 forKey:@"doubleKey"];
+  // Set a Float in Preferences
+  [prefs setFloat:1.2345678 forKey:@"floatKey"];
+  // Set a Bool in Preferences
+  [prefs setBool:false forKey:@"boolKey"];
+  // Synchronize Preferences (prefs)
 //  [prefs synchronize];
-//Retreive Preferences
-//  NSUserDefaults *prefs = [NSUserDefaults standardUserDefaults];
-  
-  // getting my NSString back
-//  NSString *myString = [prefs stringForKey:@"keyToLookupString"];
-//  NSLog(@"%@",myString);
+  //Retreive an NSString from Preferences
+  NSString *myString = [prefs  stringForKey:@"stringKey"];
+  NSLog(@"%@",myString);
+  // Retreive an NSInteger from Preferences
+  NSInteger myInt = [prefs integerForKey:@"integerKey"];
+  NSLog(@"%ld",(long)myInt);
+  // Retreive a Double from Preferences
+  double myDouble = [prefs doubleForKey:@"doubleKey"];
+  NSLog(@"%f",myDouble);
+  // Retreive a Float from Preferences
+  float myFloat = [prefs floatForKey:@"floatKey"];
+  NSLog(@"%f",myFloat);
+  // Retreive a Bool from Preferences
+  bool myBool = [prefs boolForKey:@"boolKey"];
+  NSLog(@"%u",myBool);
 
-  // getting my NSInteger back
-//  NSInteger myInt = [prefs integerForKey:@"integerKey"];
-//  NSLog(@"%ld",(long)myInt);
+  // Create Application Data
+  NSUserDefaults *appData = [NSUserDefaults standardUserDefaults];
+  // Set an NSString in AppData
+  [appData setObject:@"Safari" forKey:@"applicationName"];
+  // Synchronize Application Data (appData)
+//  [appData synchronize];
+  // Retreive an NSString from AppData
+  NSString *myApplicationName = [appData  stringForKey:@"applicationName"];
+  // Display My Application Name
+  NSLog(@"%@",myApplicationName);
 
-    // getting my Double back
-//  double myDouble = [prefs doubleForKey:@"doubleKey"];
-//  NSLog(@"%f",myDouble);
-
-  // getting my Float back
-//  float myFloat = [prefs floatForKey:@"floatKey"];
-//  NSLog(@"%f",myFloat);
+// Show the whole dictionary
+NSLog(@"%@",appData.dictionaryRepresentation);
 
 }
 
